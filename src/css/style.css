@@ -1,0 +1,97 @@
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1250px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #000;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1250px;
+}
+
+.logo {
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Rubik Doodle Triangles", system-ui;
+}
+
+.nav-container {
+  padding-top: 0.9rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: center;
+  color: #fff;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: black;
+  font-family: "Overpass", sans-serif;
+  color: #fff;
+}
+
+.container-link {
+  display: flex;
+  gap: 2rem;
+  color: #fff;
+}
+
+.intro {
+  color: #fff;
+  font-family: "Overpass", sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+}
+.intro .intro-section {
+  padding-top: 5rem;
+}
+.intro p {
+  font-size: 40px;
+}
+.intro h1 {
+  padding-top: 2rem;
+  font-size: 100px;
+  letter-spacing: 2px;
+  color: rgb(212, 206, 206);
+}
+.intro .vertical-line {
+  position: relative;
+  width: 2px;
+  height: 40px;
+  background-color: rgb(212, 206, 206);
+  margin: 0 10px;
+}
+.intro .vertical-line::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.intro .section {
+  display: flex;
+  align-items: center;
+  align-self: center;
+  gap: 1rem;
+}
+.intro .section-intro {
+  display: flex;
+  align-items: center;
+  align-self: center;
+  gap: 1rem;
+  padding-top: 1rem;
+}
+
+/*# sourceMappingURL=style.css.map */
