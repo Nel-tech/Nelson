@@ -1,14 +1,19 @@
-import { Header } from "./Component/Home/Header";
-import { Section } from "./Component/Home/Section";
-import { Intro } from "./Component/Home/Intro";
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Home from "./Component/Home/Home.jsx";
+import About from "./Component/About/About.jsx";
+import Work from "./Component/Work/Work.jsx";
 
-export default function app() {
+const App = () => {
   return (
-    <div>
-      <Section>
-        <Header />
-        <Intro />
-      </Section>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/Home" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/work" element={<Work />} />
+      </Routes>
+    </Router>
   );
-}
+};
+
+export default App;

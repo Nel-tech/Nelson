@@ -1,0 +1,49 @@
+.work-container {
+  padding-top: 3rem;
+  h1 {
+    letter-spacing: 4px;
+    line-height: 100px;
+    color: rgb(212, 206, 206);
+    font-family: $font-body;
+    font-size: 60px;
+    max-width: 700px;
+  }
+
+  p {
+    padding-top: 6rem;
+    padding-bottom: 3rem;
+    color: rgb(212, 206, 206);
+    font-size: 20px;
+    font-family: $font-body;
+  }
+
+  small {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .work-sect {
+    margin-bottom: 2rem;
+  }
+  .lat__works {
+    padding-top: 3rem;
+    p {
+      font-size: 20px;
+    }
+
+    .img-works {
+      width: 430px;
+    }
+  }
+
+  .work-title p {
+    font-size: 17px;
+  }
+  .horizontal {
+    width: 100%;
+    border: 1px solid rgb(212, 206, 206);
+    height: 0.0625rem;
+    margin-top: 0.7rem;
+    margin-bottom: 0.7rem;
+  }
+}

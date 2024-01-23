@@ -2,6 +2,8 @@
 @import "utility.scss";
 @import "buttons.scss";
 @import "mobile.scss";
+@import "About.scss";
+@import "Work.scss";
 * {
   box-sizing: border-box;
   margin: 0;
@@ -88,5 +90,58 @@ body {
     align-self: center;
     gap: 1rem;
     padding-top: 1rem;
+  }
+  .mid-section {
+    padding-top: 2rem;
+  }
+  .mid-text {
+    font-size: 20px;
+  }
+  .btn-btns {
+    padding-top: 2rem;
+    display: flex;
+    gap: 2rem;
+  }
+
+  .second-section {
+    padding-top: 5rem;
+    p {
+      font-size: 25px;
+      color: rgb(212, 206, 206);
+      letter-spacing: 2px;
+      max-width: 900px;
+      padding-bottom: 3rem;
+    }
+  }
+  small {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .work-sect {
+    margin-bottom: 2rem;
+  }
+  .lat__works {
+    padding-top: 3rem;
+    p {
+      font-size: 20px;
+    }
+
+    .img-works {
+      width: 430px;
+    }
+  }
+  .img-container {
+    margin-bottom: 1rem;
+  }
+  .work-title p {
+    font-size: 17px;
+  }
+  .horizontal {
+    width: 100%;
+    border: 1px solid rgb(212, 206, 206);
+    height: 0.0625rem;
+    margin-top: 0.7rem;
+    margin-bottom: 0.7rem;
   }
 }

@@ -4,6 +4,102 @@
   max-width: 1250px;
 }
 
+.btn {
+  background-color: #b8860b;
+  padding: 0.65rem 2rem;
+  border: none;
+  border-radius: 5px;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  font-family: "Overpass", sans-serif;
+  cursor: pointer;
+}
+.btn:hover {
+  transform: scale(0.98);
+}
+
+.btn-about {
+  text-align: center;
+}
+
+.button-container {
+  display: flex;
+  gap: 15rem;
+}
+
+.about-container {
+  padding-top: 3rem;
+}
+.about-container .About-header {
+  letter-spacing: 4px;
+  line-height: 100px;
+  color: rgb(212, 206, 206);
+  font-family: "Overpass", sans-serif;
+  font-size: 60px;
+  max-width: 700px;
+}
+.about-container .about-section {
+  padding-top: 6rem;
+  display: flex;
+  gap: 4rem;
+}
+.about-container .about-section .continous {
+  width: 700px;
+}
+.about-container .my-self {
+  color: white;
+  font-family: "Overpass", sans-serif;
+  font-size: 20px;
+  line-height: 40px;
+  max-width: 600px;
+}
+
+.work-container {
+  padding-top: 3rem;
+}
+.work-container h1 {
+  letter-spacing: 4px;
+  line-height: 100px;
+  color: rgb(212, 206, 206);
+  font-family: "Overpass", sans-serif;
+  font-size: 60px;
+  max-width: 700px;
+}
+.work-container p {
+  padding-top: 6rem;
+  padding-bottom: 3rem;
+  color: rgb(212, 206, 206);
+  font-size: 20px;
+  font-family: "Overpass", sans-serif;
+}
+.work-container small {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.work-container .work-sect {
+  margin-bottom: 2rem;
+}
+.work-container .lat__works {
+  padding-top: 3rem;
+}
+.work-container .lat__works p {
+  font-size: 20px;
+}
+.work-container .lat__works .img-works {
+  width: 430px;
+}
+.work-container .work-title p {
+  font-size: 17px;
+}
+.work-container .horizontal {
+  width: 100%;
+  border: 1px solid rgb(212, 206, 206);
+  height: 0.0625rem;
+  margin-top: 0.7rem;
+  margin-bottom: 0.7rem;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -92,6 +188,57 @@ body {
   align-self: center;
   gap: 1rem;
   padding-top: 1rem;
+}
+.intro .mid-section {
+  padding-top: 2rem;
+}
+.intro .mid-text {
+  font-size: 20px;
+}
+.intro .btn-btns {
+  padding-top: 2rem;
+  display: flex;
+  gap: 2rem;
+}
+.intro .second-section {
+  padding-top: 5rem;
+}
+.intro .second-section p {
+  font-size: 25px;
+  color: rgb(212, 206, 206);
+  letter-spacing: 2px;
+  max-width: 900px;
+  padding-bottom: 3rem;
+}
+.intro small {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.intro .work-sect {
+  margin-bottom: 2rem;
+}
+.intro .lat__works {
+  padding-top: 3rem;
+}
+.intro .lat__works p {
+  font-size: 20px;
+}
+.intro .lat__works .img-works {
+  width: 430px;
+}
+.intro .img-container {
+  margin-bottom: 1rem;
+}
+.intro .work-title p {
+  font-size: 17px;
+}
+.intro .horizontal {
+  width: 100%;
+  border: 1px solid rgb(212, 206, 206);
+  height: 0.0625rem;
+  margin-top: 0.7rem;
+  margin-bottom: 0.7rem;
 }
 
 /*# sourceMappingURL=style.css.map */
