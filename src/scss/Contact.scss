@@ -1,0 +1,120 @@
+.contact-container {
+  display: inline-flex;
+}
+h3 {
+  padding-top: 3rem;
+  text-align: center;
+  color: cornflowerblue;
+  font-size: 70px;
+  font-family: $font-body;
+}
+h4 {
+  padding-top: 3rem;
+  color: white;
+  font-size: 40px;
+  max-width: 500px;
+  font-family: $font-body;
+}
+/* Updated Styles */
+span {
+  display: inline-block;
+  padding-right: 0.4vw;
+  padding-top: 0.8vw;
+  font-size: 1.5vw;
+  line-height: 2.8vw;
+  color: rgb(248, 94, 94);
+  font-family: $font-body;
+}
+
+form {
+  width: 60%;
+  margin: 0 auto;
+  padding: 2vw;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.8),
+    rgba(0, 0, 0, 0.4)
+  ); /* Subtle gradient background for the form */
+  border: 2px solid rgba(255, 255, 255, 0.2); /* Soft white border to define edges */
+  border-radius: 10px; /* Rounded corners for a softer look */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+label {
+  display: block;
+  font-size: 1.6vw;
+  color: cornflowerblue;
+  font-family: $font-body;
+  margin-bottom: 0.5vw;
+}
+
+input,
+textarea {
+  border-bottom: 2px solid #ffffff; /* Add a bottom border for a clean look */
+  border-radius: 8px;
+  width: 100%;
+  margin: 1vw 0 3vw 0;
+  padding: 0.5vw;
+  outline: none;
+  font-size: 1.5vw;
+  background: rgba(0, 0, 0, 0.6); /* Darker background for contrast */
+  border-color: rgba(255, 255, 255, 0.5); /* Brighter border for focus */
+  box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.3); /* Inner shadow for depth */
+  transition: all 0.2s ease-in-out; /* Smooth transitions for visual appeal */
+}
+
+input:focus,
+textarea:focus {
+  border-color: #ffffff; /* Highlight focused fields */
+  box-shadow: inset 0px 1px 5px rgba(255, 255, 255, 0.2); /* Enhanced focus effect */
+}
+
+// .contact-button {
+//   margin-top: 2vw;
+//   background-color: rgb(248, 94, 94);
+//   color: #ffffff;
+//   padding: 1vw 2vw;
+//   border: none;
+//   border-radius: 5px;
+//   cursor: pointer;
+//   transition: background-color 0.3s ease; /* Add a smooth transition effect for the background color */
+// }
+
+// .contact-button:hover {
+//   background-color: #ffffff; /* Change background color on hover for contrast */
+//   color: rgb(248, 94, 94);
+// }
+
+.contact-button {
+}
+
+@media (max-width: 425px) {
+  //   flex-direction: column;
+
+  .work-toast-msg {
+    width: 100%;
+    margin-bottom: 8vw;
+  }
+  span {
+    font-size: 4vw;
+    padding-right: 0.8vw;
+    letter-spacing: 0.5vw;
+  }
+
+  form {
+    width: 100%;
+  }
+  label {
+    font-size: 3vw;
+  }
+  input,
+  textarea {
+    border-bottom: 0.1vw solid rgba(0, 0, 0, 0.2);
+    height: 7vw;
+    font-size: 3vw;
+  }
+
+  .contact-button {
+    margin-left: 35%;
+  }
+}
