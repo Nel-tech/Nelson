@@ -14,17 +14,37 @@
   font-family: "Overpass", sans-serif;
   cursor: pointer;
 }
-.btn:hover {
-  transform: scale(0.98);
-}
 
-.btn-about {
+.btn-overall {
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .button-container {
   display: flex;
-  gap: 15rem;
+  gap: 13rem;
+}
+
+.btn-link {
+  background-color: #b8860b;
+  padding: 0.55rem 1rem;
+  font-size: 15px;
+  border: none;
+  border-radius: 5px;
+  color: rgb(0, 0, 0);
+  font-family: "Overpass", sans-serif;
+  cursor: pointer;
+}
+
+.btn-about {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  align-content: center;
 }
 
 .about-container {
@@ -44,7 +64,7 @@
   gap: 4rem;
 }
 .about-container .about-section .continous {
-  width: 700px;
+  width: 500px;
 }
 .about-container .my-self {
   color: white;
@@ -52,6 +72,59 @@
   font-size: 20px;
   line-height: 40px;
   max-width: 600px;
+}
+
+.tools {
+  padding-top: 2rem;
+}
+.tools h1 {
+  padding-top: 3rem;
+  color: rgb(212, 206, 206);
+  font-family: "Overpass", sans-serif;
+  text-align: center;
+}
+
+.tools-icon {
+  font-size: 50px;
+  color: cornflowerblue;
+}
+
+.tools-img {
+  padding-top: 3rem;
+  padding-bottom: 5rem;
+  display: flex;
+  align-items: center;
+  align-self: center;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.services {
+  color: white;
+  font-family: "Overpass", sans-serif;
+  background-color: azure;
+  padding-bottom: 3rem;
+  height: 400px;
+}
+.services .section-heading {
+  color: black;
+  padding-top: 1.5rem;
+  margin-left: 3rem;
+}
+.services .services-title {
+  color: black;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+}
+.services .services-container {
+  margin-left: 3rem;
+  margin-right: 3rem;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  align-content: center;
+  gap: 3rem;
 }
 
 .work-container {
@@ -65,9 +138,10 @@
   font-size: 60px;
   max-width: 700px;
 }
-.work-container p {
-  padding-top: 6rem;
+.work-container .heading {
   padding-bottom: 3rem;
+}
+.work-container p {
   color: rgb(212, 206, 206);
   font-size: 20px;
   font-family: "Overpass", sans-serif;
@@ -88,6 +162,9 @@
 }
 .work-container .lat__works .img-works {
   width: 430px;
+}
+.work-container .img-container {
+  margin-bottom: 1rem;
 }
 .work-container .work-title p {
   font-size: 17px;
@@ -239,6 +316,28 @@ body {
   height: 0.0625rem;
   margin-top: 0.7rem;
   margin-bottom: 0.7rem;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+}
+@media (max-width: 768px) {
+  .lat-title {
+    text-align: center;
+    padding-bottom: 2rem;
+  }
+  small {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .work-sect {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

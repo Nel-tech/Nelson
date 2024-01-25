@@ -20,7 +20,7 @@ function Nav() {
 
             <div>
               <Magnetic>
-                <Link to="/about" className="nav-link">
+                <Link to="/About" className="nav-link">
                   About
                 </Link>
               </Magnetic>
@@ -28,7 +28,7 @@ function Nav() {
 
             <div>
               <Magnetic>
-                <Link to="/work" className="nav-link">
+                <Link to="/Work" className="nav-link">
                   Project
                 </Link>
               </Magnetic>
@@ -36,7 +36,7 @@ function Nav() {
 
             <div>
               <Magnetic>
-                <Link to="/" className="nav-link">
+                <Link to="/Contact" className="nav-link">
                   Contact
                 </Link>
               </Magnetic>

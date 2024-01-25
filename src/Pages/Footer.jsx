@@ -27,7 +27,7 @@ const StyledFooter = styled.footer`
         font-size: 5.5vw;
         height: max-content;
         font-weight: 900;
-        font-family: "Barlow Condensed", sans-serif;
+        font-family: "Overpass", sans-serif;
         color: rgb(0, 0, 0);
       }
       > .element {
@@ -42,6 +42,7 @@ const StyledFooter = styled.footer`
 
           > a {
             color: rgb(0, 0, 0);
+            font-family: "Overpass", sans-serif;
           }
         }
       }

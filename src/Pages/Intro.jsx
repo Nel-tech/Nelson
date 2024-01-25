@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { TypeAnimation } from "react-type-animation";
+import Magnetic from "../Pages/Magnetic";
 
 const Anime = () => {
   return (
@@ -13,7 +14,7 @@ const Anime = () => {
           "Making designs functional and intuitive",
           1000,
         ]}
-        speed={50}
+        speed={30}
         repeat={Infinity}
         style={{ fontSize: "20px" }}
       />
@@ -49,21 +50,25 @@ function Intro() {
 
       <div>
         <article className="btn-btns">
-          <a
-            href="https://github.com/Nel-tech"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <button className="btn">Github</button>
-          </a>
+          <Magnetic>
+            <a
+              href="https://github.com/Nel-tech"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <button className="btn">Github</button>
+            </a>
+          </Magnetic>
 
-          <a
-            href="www.linkedin.com/in/favour-nelson-a0164523a"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <button className="btn">Linkedln</button>
-          </a>
+          <Magnetic>
+            <a
+              href="www.linkedin.com/in/favour-nelson-a0164523a"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <button className="btn">Linkedln</button>
+            </a>
+          </Magnetic>
         </article>
       </div>
 
@@ -74,20 +79,23 @@ function Intro() {
           boundaries with a pioneering spirit and a commitment to simplicity
         </p>
         <div className="btn-about">
-          <Link to="/about">
-            <button className="btn">About</button>
-          </Link>
+          <Magnetic>
+            <Link to="/work" className="btn-overall">
+              <button className="btn">About</button>
+            </Link>
+          </Magnetic>
         </div>
+        
       </main>
 
       <main className="lat__works">
-        <p>Latest Works</p>
+        <p className="lat-title">Latest Works</p>
 
         <small>
           <div className="work-sect">
             <div className="img-container">
               <img
-                src="/images/Screenshot (166).png"
+                src="/images/Designo.png"
                 alt="Designo-Multi-Page"
                 className="img-works"
               />
@@ -99,24 +107,28 @@ function Intro() {
             </div>
 
             <div className="button-container">
-              <div>
-                <a href="#about">
-                  <button>Thought Process</button>
-                </a>
-              </div>
+              <Magnetic>
+                <div>
+                  <a href="#about">
+                    <button className="btn-link">Description</button>
+                  </a>
+                </div>
+              </Magnetic>
 
-              <div>
-                <a href="#a">
-                  <button>Live Site</button>
-                </a>
-              </div>
+              <Magnetic>
+                <div>
+                  <a href="#a">
+                    <button className="btn-link">Live Site</button>
+                  </a>
+                </div>
+              </Magnetic>
             </div>
           </div>
 
           <div className="work-sect">
             <div className="img-container">
               <img
-                src="/images/Screenshot (166).png"
+                src="/images/Designo.png"
                 alt="Designo-Multi-Page"
                 className="img-works"
               />
@@ -128,24 +140,28 @@ function Intro() {
             </div>
 
             <div className="button-container">
-              <div>
-                <a href="#about">
-                  <button>Thought Process</button>
-                </a>
-              </div>
+              <Magnetic>
+                <div>
+                  <a href="#about">
+                    <button className="btn-link">Description</button>
+                  </a>
+                </div>
+              </Magnetic>
 
-              <div>
-                <a href="#a">
-                  <button>Live Site</button>
-                </a>
-              </div>
+              <Magnetic>
+                <div>
+                  <a href="#a">
+                    <button className="btn-link">Live Site</button>
+                  </a>
+                </div>
+              </Magnetic>
             </div>
           </div>
 
           <div className="work-sect">
             <div className="img-container">
               <img
-                src="/images/Screenshot (166).png"
+                src="/images/Designo.png"
                 alt="Designo-Multi-Page"
                 className="img-works"
               />
@@ -157,24 +173,28 @@ function Intro() {
             </div>
 
             <div className="button-container">
-              <div>
-                <a href="#about">
-                  <button>Thought Process</button>
-                </a>
-              </div>
+              <Magnetic>
+                <div>
+                  <a href="#about">
+                    <button className="btn-link">Description</button>
+                  </a>
+                </div>
+              </Magnetic>
 
-              <div>
-                <a href="#a">
-                  <button>Live Site</button>
-                </a>
-              </div>
+              <Magnetic>
+                <div>
+                  <a href="#a">
+                    <button className="btn-link">Live Site</button>
+                  </a>
+                </div>
+              </Magnetic>
             </div>
           </div>
 
           <div className="work-sect">
             <div className="img-container">
               <img
-                src="/images/Screenshot (166).png"
+                src="/images/Designo.png"
                 alt="Designo-Multi-Page"
                 className="img-works"
               />
@@ -186,26 +206,32 @@ function Intro() {
             </div>
 
             <div className="button-container">
-              <div>
-                <a href="#about">
-                  <button>Thought Process</button>
-                </a>
-              </div>
+              <Magnetic>
+                <div>
+                  <a href="#about">
+                    <button className="btn-link">Description</button>
+                  </a>
+                </div>
+              </Magnetic>
 
-              <div>
-                <a href="#a">
-                  <button>Live Site</button>
-                </a>
-              </div>
+              <Magnetic>
+                <div>
+                  <a href="#a">
+                    <button className="btn-link">Live Site</button>
+                  </a>
+                </div>
+              </Magnetic>
             </div>
           </div>
         </small>
       </main>
 
       <div className="btn-about">
-        <a href="#about">
-          <button className="btn">Works</button>
-        </a>
+        <Magnetic>
+          <Link to="/work" className="btn-overall">
+            <button className="btn">Work</button>
+          </Link>
+        </Magnetic>
       </div>
     </div>
   );
