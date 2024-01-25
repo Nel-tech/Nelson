@@ -8,11 +8,11 @@ import Contact from "./Component/Contact/Contact.jsx";
 const App = () => {
   return (
     <Router>
-      <Routes>
-        <Route path="/Home" element={<Home />} />
-        <Route path="/About" element={<About />} />
-        <Route path="/Work" element={<Work />} />
-        <Route path="/Contact" element={<Contact />} />
+     <Routes>
+        <Route path="/" element={<Home />}></Route>
+        <Route path="/work" element={<Work />}></Route>
+        <Route path="/about" element={<About />}></Route>
+        <Route path="/contact" element={<Contact />}></Route>
       </Routes>
     </Router>
   );

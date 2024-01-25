@@ -280,7 +280,7 @@ textarea:focus {
 }
 
 body {
-  background-color: #000;
+  background-color: black;
 }
 
 .container {
@@ -315,6 +315,10 @@ body {
   display: flex;
   gap: 2rem;
   color: #fff;
+}
+
+.typing {
+  color: white;
 }
 
 .intro {

@@ -1,6 +1,6 @@
 import React from "react";
 import Nav from "../../Pages/Nav";
-import "../../css/style.css";
+// import "../../css/style.css";
 import Magnetic from "../../Pages/Magnetic";
 
 function Work() {
