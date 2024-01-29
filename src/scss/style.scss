@@ -41,7 +41,7 @@ body {
 }
 .timeOfDay {
   color: white;
-  font-size: 20px;
+  font-size: 13px;
   font-family: "Overpass", sans-serif;
 }
 .container {
@@ -303,6 +303,16 @@ nav {
     }
     .horizontal {
       display: none;
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .intro {
+    .lat__works {
+      .img-works {
+        width: 300px;
+      }
     }
   }
 }

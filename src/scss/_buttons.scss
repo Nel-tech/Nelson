@@ -43,3 +43,10 @@
     margin-top: 1rem;
   }
 }
+
+@media (max-width: 375px) {
+  .button-container {
+    gap: 6rem;
+    margin-top: 1rem;
+  }
+}

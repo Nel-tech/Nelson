@@ -53,6 +53,12 @@
     margin-top: 1rem;
   }
 }
+@media (max-width: 375px) {
+  .button-container {
+    gap: 6rem;
+    margin-top: 1rem;
+  }
+}
 .about-container {
   padding-top: 3rem;
 }
@@ -420,7 +426,7 @@ body {
 
 .timeOfDay {
   color: white;
-  font-size: 20px;
+  font-size: 13px;
   font-family: "Overpass", sans-serif;
 }
 
@@ -673,6 +679,11 @@ nav {
   }
   .intro .horizontal {
     display: none;
+  }
+}
+@media (max-width: 375px) {
+  .intro .lat__works .img-works {
+    width: 300px;
   }
 }
 
