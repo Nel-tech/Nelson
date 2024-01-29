@@ -399,12 +399,29 @@ body {
   justify-content: center;
   align-items: center;
   z-index: 999;
+  opacity: 1; /* Set initial opacity to 1 */
   transition: opacity 0.5s ease-in-out;
 }
 
 .fade-out {
   opacity: 0;
   pointer-events: none;
+}
+
+.fade-in {
+  opacity: 1;
+}
+
+.position-align {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.timeOfDay {
+  color: white;
+  font-size: 20px;
+  font-family: "Overpass", sans-serif;
 }
 
 .container {
