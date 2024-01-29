@@ -57,13 +57,7 @@ function Nav() {
               </Magnetic>
             </div>
 
-            <div>
-              <Magnetic style={{ zIndex: 9999 }}>
-                <Link to="/contact" className="nav-link">
-                  Contact
-                </Link>
-              </Magnetic>
-            </div>
+           
             {/* ... other nav links */}
           </nav>
 
