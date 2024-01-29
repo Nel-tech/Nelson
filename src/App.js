@@ -4,11 +4,12 @@ import Home from "./Component/Home/Home.jsx";
 import About from "./Component/About/About.jsx";
 import Work from "./Component/Work/Work.jsx";
 import Contact from "./Component/Contact/Contact.jsx";
+// import Preloader from "./Component/Preloader.jsx";
 
 const App = () => {
   return (
     <Router>
-     <Routes>
+      <Routes>
         <Route path="/" element={<Home />}></Route>
         <Route path="/work" element={<Work />}></Route>
         <Route path="/about" element={<About />}></Route>

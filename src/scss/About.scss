@@ -48,35 +48,147 @@
   align-items: center;
   align-self: center;
   justify-content: center;
-  gap: 4rem;
+  gap: 3rem;
 }
 
 .services {
   color: white;
   font-family: $font-body;
   background-color: azure;
-  padding-bottom: 3rem;
+  width: 100%;
   height: 400px;
 
   .section-heading {
     color: black;
     padding-top: 1.5rem;
-
     margin-left: 3rem;
   }
   .services-title {
     color: black;
     padding-top: 2rem;
-    padding-bottom: 3rem;
+    padding-bottom: 1rem;
+  }
+  p {
+    max-width: 350px;
   }
   .services-container {
-    margin-left: 3rem;
-    margin-right: 3rem;
     color: black;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-self: center;
-    align-content: center;
-    gap: 3rem;
+  }
+}
+@media (max-width: 1024px) {
+  .about-container {
+    padding-top: 3rem;
+
+    .About-header {
+      letter-spacing: 4px;
+      line-height: 100px;
+      color: rgb(212, 206, 206);
+      font-family: "Overpass", sans-serif;
+      font-size: 60px;
+      max-width: 700px;
+    }
+    .about-section {
+      padding-top: 6rem;
+      display: flex;
+      gap: 4rem;
+
+      .continous {
+        display: none;
+      }
+    }
+  }
+  .tools {
+    padding-top: 2rem;
+
+    h1 {
+      padding-top: 3rem;
+      color: rgb(212, 206, 206);
+      font-family: $font-body;
+      text-align: center;
+    }
+  }
+  .tools-icon {
+    font-size: 30px;
+    color: cornflowerblue;
+  }
+  .tools-img {
+    gap: 1.5rem;
+  }
+  .services {
+    .section-heading {
+      margin-left: 0rem;
+    }
+    .services-title {
+      color: black;
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+    }
+    // p {
+    //   max-width: 200px;
+    // }
+    .services-container {
+      color: black;
+      display: flex;
+      justify-content: center;
+      align-self: center;
+      align-content: center;
+      gap: 1rem;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .services {
+    .section-heading {
+      margin-left: 2rem;
+    }
+    p {
+      max-width: 230px;
+    }
+    .services-container {
+      margin-left: 2rem;
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .about-container {
+    .About-header {
+      font-size: 40px;
+      max-width: 700px;
+    }
+    .about-section {
+      flex-direction: column;
+     flex-wrap:wrap;
+      .my-self {
+        font-size: 18px;
+      }
+    }
+  }
+
+  .tools {
+    padding-top: 2rem;
+  }
+  .tools-icon {
+    font-size: 20px;
+    color: cornflowerblue;
+  }
+  .tools-img {
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+  }
+  .services {
+    height: 800px;
+    p {
+      max-width: 350px;
+    }
+    .services-container {
+      flex-direction: column;
+      justify-content: space-around;
+      align-self: center;
+    }
   }
 }

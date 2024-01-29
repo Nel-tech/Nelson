@@ -1,6 +1,12 @@
 import React from "react";
 import { styled } from "styled-components";
 import Magnetic from "../Pages/Magnetic";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faLinkedin,
+  faGithubAlt,
+  faXTwitter,
+} from "@fortawesome/free-brands-svg-icons";
 
 const StyledDiv = styled.div`
   position: ${(props) => (props.pos ? props.pos : "absolute")};
@@ -33,13 +39,15 @@ const StyledDiv = styled.div`
           display: flex;
           flex-direction: row;
           padding-left: 0;
+          gap: 2rem;
           margin-right: 1.3vw;
 
-          & li {
+          & div {
             padding-right: 0.5vw;
 
             > a {
               color: rgb(0, 0, 0);
+              font-size: 20px;
             }
           }
         }
@@ -78,7 +86,7 @@ const StyledDiv = styled.div`
     }
 
     > .copyright {
-      font-size: 2.2vw;
+      font-size: 3vw;
     }
   }
 `;
@@ -104,37 +112,37 @@ const BaseFooter = ({ pos }) => {
             <p className="base-description">SOCIALS</p>
             <ul className="base-value">
               <Magnetic>
-                <li>
+                <div>
                   <a
                     href="www.linkedin.com/in/favour-nelson-a0164523a"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    LinkedIn
+                    <FontAwesomeIcon icon={faLinkedin} fade />
                   </a>
-                </li>
+                </div>
               </Magnetic>
               <Magnetic>
-                <li>
+                <div>
                   <a
                     href="https://github.com/Nel-tech"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    Github
+                    <FontAwesomeIcon icon={faGithubAlt} fade />
                   </a>
-                </li>
+                </div>
               </Magnetic>
               <Magnetic>
-                <li>
+                <div>
                   <a
                     href="https://www.twitter.com/manlike_favour"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    Twitter
+                    <FontAwesomeIcon icon={faXTwitter} fade />
                   </a>
-                </li>
+                </div>
               </Magnetic>
             </ul>
           </div>

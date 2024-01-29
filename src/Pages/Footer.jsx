@@ -7,7 +7,7 @@ import ActionButton from "../Pages/ActionButton";
 import { scrollToTop } from "../utils/scrollToTop";
 
 const StyledFooter = styled.footer`
-  height: 90vh;
+  height: 110vh;
   position: relative;
   background-color: #b8860b;
 
@@ -27,7 +27,9 @@ const StyledFooter = styled.footer`
         font-size: 5.5vw;
         height: max-content;
         font-weight: 900;
+        padding-bottom: 1rem;
         font-family: "Overpass", sans-serif;
+        // padding-bottom: 2rem;
         color: rgb(0, 0, 0);
       }
       > .element {
@@ -38,7 +40,7 @@ const StyledFooter = styled.footer`
           letter-spacing: 0.5vw;
           padding: 2vw 1vw;
           cursor: pointer;
-          font-size: 1.1vw;
+          font-size: 1.5vw;
 
           > a {
             color: rgb(0, 0, 0);
@@ -64,7 +66,7 @@ const StyledFooter = styled.footer`
 
         > .element {
           p {
-            font-size: 2.5vw;
+            font-size: 3vw;
           }
         }
 
@@ -82,7 +84,7 @@ const Footer = () => {
     <StyledFooter>
       <div className="footer-group">
         <div className="footer-elements">
-          <h1>Let's Work Together</h1>
+          <h1>Your vision. My code. Let's build it.</h1>
           <div className="element">
             <Magnetic>
               <p>

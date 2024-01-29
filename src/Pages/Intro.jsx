@@ -16,7 +16,6 @@ const Anime = () => {
         ]}
         speed={30}
         repeat={Infinity}
-        style={{ fontSize: "20px" }}
         className="typing"
       />
     </div>
@@ -229,7 +228,9 @@ function Intro() {
       <div className="btn-about">
         <Magnetic>
           <Link to="/work" className="btn-overall">
-            <button className="btn">Work</button>
+            <button className="btn" id="btn-work">
+              Work
+            </button>
           </Link>
         </Magnetic>
       </div>

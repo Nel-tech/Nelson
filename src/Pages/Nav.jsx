@@ -1,25 +1,48 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Magnetic from "../Pages/Magnetic";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars, faClose } from "@fortawesome/free-solid-svg-icons";
 
 function Nav() {
+  const [mobileNav, setMobileNav] = useState(/* initial state */);
+
+  function toggleNavbar() {
+    setMobileNav(!mobileNav);
+  }
+
+  function closeNavbar() {
+    setMobileNav(false);
+  }
+
   return (
     <div>
       <div className="nav-container">
         <h1 className="logo">Favour</h1>
 
-        <nav>
-          <div className="container-link">
+        <div>
+          <nav className={mobileNav ? "open" : "close"}>
+            {mobileNav && (
+              <div className="nav__close-container">
+                <FontAwesomeIcon
+                  icon={faClose}
+                  className="nav__close"
+                  onClick={closeNavbar}
+                />
+              </div>
+            )}
+
+            {/* Navigation links */}
             <div>
-              <Magnetic>
-                <Link to="/home" className="nav-link">
+              <Magnetic style={{ zIndex: 9999 }}>
+                <Link to="/" className="nav-link">
                   Home
                 </Link>
               </Magnetic>
             </div>
 
             <div>
-              <Magnetic>
+              <Magnetic style={{ zIndex: 9999 }}>
                 <Link to="/about" className="nav-link">
                   About
                 </Link>
@@ -27,7 +50,7 @@ function Nav() {
             </div>
 
             <div>
-              <Magnetic>
+              <Magnetic style={{ zIndex: 9999 }}>
                 <Link to="/work" className="nav-link">
                   Project
                 </Link>
@@ -35,14 +58,25 @@ function Nav() {
             </div>
 
             <div>
-              <Magnetic>
+              <Magnetic style={{ zIndex: 9999 }}>
                 <Link to="/contact" className="nav-link">
                   Contact
                 </Link>
               </Magnetic>
             </div>
+            {/* ... other nav links */}
+          </nav>
+
+          <div>
+            <Magnetic>
+              <FontAwesomeIcon
+                icon={faBars}
+                className="nav__bars"
+                onClick={toggleNavbar}
+              />
+            </Magnetic>
           </div>
-        </nav>
+        </div>
       </div>
     </div>
   );

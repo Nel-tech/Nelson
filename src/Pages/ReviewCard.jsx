@@ -8,9 +8,11 @@ const StyledDiv = styled.div`
     props.backcolor ? props.backcolor : "#eeeeee"};
   border-radius: 2%;
   margin: 4vw 1vw 4vw 1vw;
+  font-family: "Overpass", sans-serif;
 
   > .review {
     font-size: 1.1vw;
+    font-family: "Overpass", sans-serif;
   }
   > .service {
     font-size: 1.1vw;

@@ -1,15 +1,15 @@
 const reviews = [
   {
     name: "Precious Ogarah",
-    imgUri: "review_img1.jpeg",
+    imgUri: "review_img1.jpg",
     org: "CEO Atypikal",
     backcolor: "#EFD595",
     review:
-      "Got a really nice site as I described. He's so hard working and understing",
+      "Got a really nice site as I described. He's so hard working and understanding",
   },
   {
     name: "John Friday",
-    imgUri: "review_img2.jpeg",
+    imgUri: "review_img2.jpg",
     org: "Code Murai",
     backcolor: "#CAEDFF",
     review:
