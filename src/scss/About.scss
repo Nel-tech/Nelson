@@ -162,7 +162,7 @@
     }
     .about-section {
       flex-direction: column;
-     flex-wrap:wrap;
+      flex-wrap: wrap;
       .my-self {
         font-size: 18px;
       }
@@ -177,8 +177,8 @@
     color: cornflowerblue;
   }
   .tools-img {
-    flex-direction: column-reverse;
-    flex-wrap: wrap;
+    flex-wrap: wrap; 
+    justify-content: flex-start;
   }
   .services {
     height: 800px;

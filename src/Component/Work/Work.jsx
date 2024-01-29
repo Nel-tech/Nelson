@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
-import Preloader from "../../Pages/Preloader"
+import Preloader from "../../Pages/Preloader";
 import Nav from "../../Pages/Nav";
 import Footer from "../../Pages/Footer";
- import "../../css/style.css";
+import "../../css/style.css";
 import Magnetic from "../../Pages/Magnetic";
 
 function Work() {
@@ -167,12 +167,25 @@ function Work() {
                   </div>
                 </div>
               </small>
+
+              <div className="btn-about">
+                <Magnetic>
+                  <a
+                    href="https://github.com/Nel-tech"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <button className="btn" id="btn-work">
+                      See More Works
+                    </button>
+                  </a>
+                </Magnetic>
+              </div>
             </main>
           </div>
-
-          <Footer />
         </div>
       )}
+      <Footer />
     </div>
   );
 }

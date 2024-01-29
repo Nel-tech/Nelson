@@ -75,13 +75,7 @@ function About() {
             <h1>Tools I use</h1>
 
             <div className="tools-img">
-              <div>
-                <img
-                  src="/images/icon/html5.svg"
-                  alt=""
-                  className="tools-icon"
-                />
-              </div>
+            
 
               <div>
                 <FontAwesomeIcon icon={faHtml5} beat className="tools-icon" />

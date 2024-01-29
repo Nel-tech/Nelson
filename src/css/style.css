@@ -222,8 +222,8 @@
     color: cornflowerblue;
   }
   .tools-img {
-    flex-direction: column-reverse;
     flex-wrap: wrap;
+    justify-content: flex-start;
   }
   .services {
     height: 800px;
@@ -287,6 +287,20 @@
   margin-bottom: 0.7rem;
 }
 
+@media (max-width: 425px) {
+  .work-container h1 {
+    font-size: 30px;
+  }
+  .work-container .lat__works {
+    padding-top: 3rem;
+  }
+  .work-container .lat__works p {
+    font-size: 20px;
+  }
+  .work-container .lat__works .img-works {
+    width: 350px;
+  }
+}
 .contact-container {
   display: inline-flex;
 }
