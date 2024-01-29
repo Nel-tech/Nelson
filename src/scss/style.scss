@@ -24,15 +24,18 @@ body {
   justify-content: center;
   align-items: center;
   z-index: 999;
-  opacity: 1; /* Set initial opacity to 1 */
+  opacity: 1; 
   transition: opacity 0.5s ease-in-out;
 }
 .fade-out {
   opacity: 0;
   pointer-events: none;
+  transition: opacity 0.5s ease-in-out; 
 }
+
 .fade-in {
   opacity: 1;
+  transition: opacity 0.5s ease-in-out; 
 }
 .position-align {
   position: absolute;

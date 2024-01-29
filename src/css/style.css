@@ -301,6 +301,14 @@
     width: 350px;
   }
 }
+@media (max-width: 375px) {
+  .work-container h1 {
+    font-size: 20px;
+  }
+  .work-container .lat__works .img-works {
+    width: 300px;
+  }
+}
 .contact-container {
   display: inline-flex;
 }
@@ -419,17 +427,19 @@ body {
   justify-content: center;
   align-items: center;
   z-index: 999;
-  opacity: 1; /* Set initial opacity to 1 */
+  opacity: 1;
   transition: opacity 0.5s ease-in-out;
 }
 
 .fade-out {
   opacity: 0;
   pointer-events: none;
+  transition: opacity 0.5s ease-in-out;
 }
 
 .fade-in {
   opacity: 1;
+  transition: opacity 0.5s ease-in-out;
 }
 
 .position-align {

@@ -4,6 +4,7 @@ import Preloader from '../../Pages/Preloader';
 import Nav from "../../Pages/Nav";
 import Intro from "../../Pages/Intro";
 import Footer from "../../Pages/Footer";
+import { motion } from "framer-motion";
 
 function Home() {
   const [loading, setLoading] = useState(true);
@@ -20,6 +21,11 @@ function Home() {
   }, []);
 
   return (
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+    >
     <div>
       <div className="container">
         {loading ? (
@@ -33,6 +39,7 @@ function Home() {
       </div>
       <Footer />
     </div>
+    </motion.div>
   );
 }
 

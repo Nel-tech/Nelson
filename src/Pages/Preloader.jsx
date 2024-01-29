@@ -1,11 +1,12 @@
 // Preloader.js
 import React, { useState, useEffect } from "react";
 import { Vortex } from "react-loader-spinner";
-import Greeting from "./Greeting";
+import { motion, useAnimation } from "framer-motion";
 
 const Preloader = () => {
-  const timeoutDuration = 100000;
+  const timeoutDuration = 60000; // 60 seconds
   const [loadingComplete, setLoadingComplete] = useState(false);
+  const controls = useAnimation();
 
   useEffect(() => {
     const timeout = setTimeout(() => {
@@ -15,31 +16,31 @@ const Preloader = () => {
     return () => clearTimeout(timeout);
   }, []);
 
+  useEffect(() => {
+    if (loadingComplete) {
+      controls.start({ opacity: 0 });
+    } else {
+      controls.start({ opacity: 1 });
+    }
+  }, [loadingComplete, controls]);
+
   return (
-    <div
-      className={`preloader-container ${
-        loadingComplete ? "fade-out" : "fade-in"
-      }`}
+    <motion.div
+      className={`preloader-container`}
+      initial={{ opacity: 1 }}
+      animate={controls}
+      exit={{ opacity: 0 }}
     >
       {!loadingComplete && (
         <Vortex
-          visible={!loadingComplete}
-          height="200"
-          width="200"
+          height={200}
+          width={200}
+          color="#00BFFF"
+          loading={!loadingComplete}
           ariaLabel="vortex-loading"
-          wrapperStyle={{}}
-          wrapperClass="vortex-wrapper"
-          colors={["red", "green", "blue", "yellow", "orange", "purple"]}
-          timeout={timeoutDuration}
         />
       )}
-
-      <div>
-        <p>
-          <Greeting />
-        </p>
-      </div>
-    </div>
+    </motion.div>
   );
 };
 

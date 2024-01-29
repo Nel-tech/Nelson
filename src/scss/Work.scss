@@ -68,3 +68,16 @@
     }
   }
 }
+
+@media (max-width: 375px) {
+  .work-container {
+    h1 {
+      font-size: 20px;
+    }
+    .lat__works {
+      .img-works {
+        width: 300px;
+      }
+    }
+  }
+}
