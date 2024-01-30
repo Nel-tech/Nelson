@@ -24,18 +24,18 @@ body {
   justify-content: center;
   align-items: center;
   z-index: 999;
-  opacity: 1; 
-  transition: opacity 0.5s ease-in-out;
+  opacity: 1;
+  transition: opacity 100000s ease-in-out;
 }
 .fade-out {
   opacity: 0;
   pointer-events: none;
-  transition: opacity 0.5s ease-in-out; 
+  transition: opacity 1s ease-in-out;
 }
 
 .fade-in {
   opacity: 1;
-  transition: opacity 0.5s ease-in-out; 
+  transition: opacity 100000s ease-in-out;
 }
 .position-align {
   position: absolute;
@@ -111,7 +111,7 @@ nav {
     padding-bottom: 2rem;
     font-size: 8em;
     letter-spacing: 2px;
-    color: rgb(212, 206, 206);
+    color: #d4cece;
   }
 
   .vertical-line {

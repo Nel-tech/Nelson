@@ -4,12 +4,14 @@ import { Vortex } from "react-loader-spinner";
 import Greeting from "./Greeting";
 
 const Preloader = () => {
-  const timeoutDuration = 100000;
+  const timeoutDuration = 1000000; // Adjusted to 10 seconds for example
   const [loadingComplete, setLoadingComplete] = useState(false);
+  const [timeoutExpired, setTimeoutExpired] = useState(false);
 
   useEffect(() => {
     const timeout = setTimeout(() => {
       setLoadingComplete(true);
+      setTimeoutExpired(true);
     }, timeoutDuration);
 
     return () => clearTimeout(timeout);
@@ -18,7 +20,7 @@ const Preloader = () => {
   return (
     <div
       className={`preloader-container ${
-        loadingComplete ? "fade-out" : "fade-in"
+        timeoutExpired ? "fade-out" : "fade-in"
       }`}
     >
       {!loadingComplete && (
@@ -29,7 +31,14 @@ const Preloader = () => {
           ariaLabel="vortex-loading"
           wrapperStyle={{}}
           wrapperClass="vortex-wrapper"
-          colors={["red", "green", "blue", "yellow", "orange", "purple"]}
+          colors={[
+            "cornflowerblue",
+            "gold",
+            "blue",
+            "white",
+            "orange",
+            "#d4cece",
+          ]}
           timeout={timeoutDuration}
         />
       )}
