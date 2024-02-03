@@ -58,6 +58,7 @@ const StyledFooter = styled.footer`
 
   @media (max-width: 425px) {
     > .footer-group {
+      height: 80vh;
       > .footer-elements {
         margin: 0;
         > h1 {
@@ -67,6 +68,9 @@ const StyledFooter = styled.footer`
         > .element {
           p {
             font-size: 3vw;
+          }
+          a {
+            font-size: 20px;
           }
         }
 
@@ -105,11 +109,11 @@ const Footer = () => {
             <Magnetic>
               <Link to={"/contact"} onClick={scrollToTop}>
                 {
-                  <ActionButton
-                    bgcolor="rgb(0, 0, 0)"
-                    color="#b8860b"
-                    value="Contact"
-                  />
+                  // <ActionButton
+                  //   bgcolor="rgb(0, 0, 0)"
+                  //   color="#b8860b"
+                  //   value="Contact"
+                  // />
                 }
               </Link>
             </Magnetic>

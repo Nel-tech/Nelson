@@ -14,6 +14,24 @@
     display: flex;
     gap: 4rem;
 
+    h4 {
+      font-size: 20px;
+    }
+
+    .greeting-flex {
+      display: flex;
+      align-items: center;
+      align-self: center;
+      align-content: center;
+      position: relative;
+      span {
+        position: absolute;
+        font-size: 35px;
+        right: 24rem;
+        top: 2rem;
+      }
+    }
+
     .continous {
       width: 500px;
     }
@@ -177,7 +195,7 @@
     color: cornflowerblue;
   }
   .tools-img {
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
     justify-content: flex-start;
   }
   .services {
@@ -189,6 +207,19 @@
       flex-direction: column;
       justify-content: space-around;
       align-self: center;
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .about-container {
+    .About-header {
+      font-size: 20px;
+    }
+    .about-section {
+      .my-self {
+        font-size: 18px;
+      }
     }
   }
 }

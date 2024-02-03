@@ -25,18 +25,18 @@ body {
   align-items: center;
   z-index: 999;
   opacity: 1;
-  transition: opacity 100000s ease-in-out;
-}
-.fade-out {
-  opacity: 0;
-  pointer-events: none;
   transition: opacity 1s ease-in-out;
 }
 
-.fade-in {
-  opacity: 1;
-  transition: opacity 100000s ease-in-out;
+.content-container {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out; /* Adjust duration and easing as needed */
 }
+
+.content-container.fade-in {
+  opacity: 1;
+}
+
 .position-align {
   position: absolute;
   bottom: 0;

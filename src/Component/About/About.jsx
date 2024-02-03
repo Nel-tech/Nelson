@@ -5,6 +5,7 @@ import reviews from "../../Pages/reviews";
 import ReviewCard from "../../Pages/ReviewCard";
 import Footer from "../../Pages/Footer";
 import CarouselTemplate from "../../Pages/CarouselTemplate";
+import Greeting2 from "../../Pages/Greeting2";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faHtml5,
@@ -49,15 +50,19 @@ function About() {
 
               <div className="about-section">
                 <h1 className="my-self">
-                  Greetings, I'm Adegbasa Favour, a Dynamic Creative Web
-                  Developer with over 4 years of immersive experience. I
-                  specialize in bringing static concepts to life, crafting
-                  interactive digital masterpieces. Proficient in cutting-edge
-                  web technologies, I use my skills as a digital artisan to
-                  infuse designs with vitality through seamless animations and
-                  user-centric experiences. I am actively seeking opportunities
-                  to contribute and make a substantial positive impact in any
-                  forward-thinking organization.
+                  <div className="greeting-flex">
+                    <Greeting2 />
+                    <span> 👋</span>{" "}
+                  </div>
+                  I'm Adegbasa Favour, a Dynamic Creative Web Developer with
+                  over 4 years of immersive experience. I specialize in bringing
+                  static concepts to life, crafting interactive digital
+                  masterpieces. Proficient in cutting-edge web technologies, I
+                  use my skills as a digital artisan to infuse designs with
+                  vitality through seamless animations and user-centric
+                  experiences. I am actively seeking opportunities to contribute
+                  and make a substantial positive impact in any forward-thinking
+                  organization.
                 </h1>
 
                 <div>
@@ -75,8 +80,6 @@ function About() {
             <h1>Tools I use</h1>
 
             <div className="tools-img">
-            
-
               <div>
                 <FontAwesomeIcon icon={faHtml5} beat className="tools-icon" />
               </div>
@@ -124,20 +127,17 @@ function About() {
               <div>
                 <h1 className="services-title">Design</h1>
                 <p>
-                  With a proven history of crafting compelling websites and
-                  apps, I consistently produce robust and user-centric digital
-                  designs. I firmly believe that a strong company brand forms
-                  the cornerstone of every successful website.
+                  I build awesome websites. User-friendly, reliable, and branded
+                  just right. Every project, a success story.
                 </p>
               </div>
 
               <div>
                 <h1 className="services-title">Development</h1>
                 <p>
-                  Armed with a versatile skill set and an unwavering commitment
-                  to excellence, I thrive across diverse domains, consistently
-                  achieving remarkable results. Don't hesitate to reach out for
-                  any service you aspire to receive.
+                  I can help with various web projects, from design to
+                  development. I'm dedicated to quality and always looking for
+                  new challenges. Need something built? Let's talk!
                 </p>
               </div>
 

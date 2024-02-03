@@ -19,15 +19,13 @@ const Preloader = () => {
 
   return (
     <div
-      className={`preloader-container ${
-        timeoutExpired ? "fade-out" : "fade-in"
-      }`}
+      className='preloader-container' 
     >
       {!loadingComplete && (
         <Vortex
           visible={!loadingComplete}
-          height="200"
-          width="200"
+          height="300"
+          width="300"
           ariaLabel="vortex-loading"
           wrapperStyle={{}}
           wrapperClass="vortex-wrapper"

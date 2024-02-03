@@ -75,6 +75,22 @@
   display: flex;
   gap: 4rem;
 }
+.about-container .about-section h4 {
+  font-size: 20px;
+}
+.about-container .about-section .greeting-flex {
+  display: flex;
+  align-items: center;
+  align-self: center;
+  align-content: center;
+  position: relative;
+}
+.about-container .about-section .greeting-flex span {
+  position: absolute;
+  font-size: 35px;
+  right: 24rem;
+  top: 2rem;
+}
 .about-container .about-section .continous {
   width: 500px;
 }
@@ -235,6 +251,14 @@
     flex-direction: column;
     justify-content: space-around;
     align-self: center;
+  }
+}
+@media (max-width: 375px) {
+  .about-container .About-header {
+    font-size: 20px;
+  }
+  .about-container .about-section .my-self {
+    font-size: 18px;
   }
 }
 .work-container {
@@ -428,18 +452,16 @@ body {
   align-items: center;
   z-index: 999;
   opacity: 1;
-  transition: opacity 100000s ease-in-out;
-}
-
-.fade-out {
-  opacity: 0;
-  pointer-events: none;
   transition: opacity 1s ease-in-out;
 }
 
-.fade-in {
+.content-container {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out; /* Adjust duration and easing as needed */
+}
+
+.content-container.fade-in {
   opacity: 1;
-  transition: opacity 100000s ease-in-out;
 }
 
 .position-align {
