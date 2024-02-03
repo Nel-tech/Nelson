@@ -6,12 +6,12 @@ import Greeting from "./Greeting";
 const Preloader = () => {
   const timeoutDuration = 1000000; // Adjusted to 10 seconds for example
   const [loadingComplete, setLoadingComplete] = useState(false);
-  const [timeoutExpired, setTimeoutExpired] = useState(false);
+  
 
   useEffect(() => {
     const timeout = setTimeout(() => {
       setLoadingComplete(true);
-      setTimeoutExpired(true);
+    
     }, timeoutDuration);
 
     return () => clearTimeout(timeout);
