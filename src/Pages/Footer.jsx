@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { styled } from "styled-components";
 import BaseFooter from "../Pages/BaseFooter";
 import Magnetic from "../Pages/Magnetic";
-import ActionButton from "../Pages/ActionButton";
+// import ActionButton from "../Pages/ActionButton";
 import { scrollToTop } from "../utils/scrollToTop";
 
 const StyledFooter = styled.footer`
@@ -58,11 +58,12 @@ const StyledFooter = styled.footer`
 
   @media (max-width: 425px) {
     > .footer-group {
-      height: 80vh;
+      height: 90vh;
+
       > .footer-elements {
         margin: 0;
         > h1 {
-          font-size: 11vw;
+          font-size: 10vw;
         }
 
         > .element {

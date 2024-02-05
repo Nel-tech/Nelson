@@ -96,6 +96,15 @@
     align-self: center;
   }
 }
+.reviews {
+  h2 {
+    color: white;
+    padding-top: 1.5rem;
+    margin-left: 3rem;
+    font-family: $font-body;
+    font-size: 30px;
+  }
+}
 @media (max-width: 1024px) {
   .about-container {
     padding-top: 3rem;

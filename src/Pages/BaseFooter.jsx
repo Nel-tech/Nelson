@@ -40,7 +40,7 @@ const StyledDiv = styled.div`
           flex-direction: row;
           padding-left: 0;
           gap: 2rem;
-          margin-right: 1.3vw;
+          margin-right: 2vw;
 
           & div {
             padding-right: 0.5vw;
@@ -114,7 +114,7 @@ const BaseFooter = ({ pos }) => {
               <Magnetic>
                 <div>
                   <a
-                    href="www.linkedin.com/in/favour-nelson-a0164523a"
+                    href=" https://ng.linkedin.com/in/favour-nelson-a0164523a"
                     target="_blank"
                     rel="noreferrer"
                   >

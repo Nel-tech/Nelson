@@ -57,7 +57,32 @@ function Nav() {
               </Magnetic>
             </div>
 
-           
+            <div className="nav-toggler-links">
+              <Magnetic style={{ zIndex: 9999 }}>
+                <a
+                  href=" https://ng.linkedin.com/in/favour-nelson-a0164523a"
+                  className="nav-link"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Linkedln
+                </a>
+              </Magnetic>
+            </div>
+
+            <div className="nav-toggler-links">
+              <Magnetic style={{ zIndex: 9999 }}>
+                <a
+                  href="https://github.com/Nel-tech"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="nav-link"
+                >
+                  Github
+                </a>
+              </Magnetic>
+            </div>
+
             {/* ... other nav links */}
           </nav>
 

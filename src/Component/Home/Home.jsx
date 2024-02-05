@@ -1,6 +1,6 @@
 import "../../css/style.css";
-import React, { useEffect, useState } from 'react';
-import Preloader from '../../Pages/Preloader';
+import React, { useEffect, useState } from "react";
+import Preloader from "../../Pages/Preloader";
 import Nav from "../../Pages/Nav";
 import Intro from "../../Pages/Intro";
 import Footer from "../../Pages/Footer";
@@ -21,25 +21,22 @@ function Home() {
   }, []);
 
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
-    >
-    <div>
-      <div className="container">
-        {loading ? (
-          <Preloader />
-        ) : (
-          <>
+    <Preloader>
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: loading ? 0 : 1 }}
+        transition={{ duration: 0.5 }}
+      >
+        <div>
+          <div className="container">
             <Nav />
+            
             <Intro />
-          </>
-        )}
-      </div>
-      <Footer />
-    </div>
-    </motion.div>
+          </div>
+          <Footer />
+        </div>
+      </motion.div>
+    </Preloader>
   );
 }
 

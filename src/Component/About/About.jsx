@@ -7,6 +7,7 @@ import Footer from "../../Pages/Footer";
 import CarouselTemplate from "../../Pages/CarouselTemplate";
 import Greeting2 from "../../Pages/Greeting2";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { motion } from "framer-motion";
 import {
   faHtml5,
   faCss3,
@@ -35,10 +36,12 @@ function About() {
 
   return (
     <div>
-      {loading ? (
-        <Preloader />
-      ) : (
-        <div>
+      <Preloader>
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: loading ? 0 : 1 }}
+          transition={{ duration: 0.5 }}
+        >
           <div className="container">
             <Nav />
 
@@ -164,8 +167,8 @@ function About() {
           </section>
 
           <Footer />
-        </div>
-      )}
+        </motion.div>
+      </Preloader>
     </div>
   );
 }

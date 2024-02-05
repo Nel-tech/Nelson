@@ -10,26 +10,23 @@ function Work() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Simulating a delay, replace this with your actual data loading logic
     const fakeDataLoading = () => {
       setTimeout(() => {
         setLoading(false);
-      }, 2000); // Adjust the time as needed
+      }, 2000);
     };
 
     fakeDataLoading();
   }, []);
 
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
-    >
-      <div>
-        {loading ? (
-          <Preloader />
-        ) : (
+    <div>
+      <Preloader>
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: loading ? 0 : 1 }}
+          transition={{ duration: 0.5 }}
+        >
           <div className="container">
             <Nav />
             <div className="work-container">
@@ -44,26 +41,75 @@ function Work() {
                   <div className="work-sect">
                     <div className="img-container">
                       <img
-                        src="/images/Designo.png"
+                        src="/images/Designo.jpg"
                         alt="Designo-Multi-Page"
                         className="img-works"
                       />
                     </div>
 
                     <div className="work-title">
-                      <p>Designo-Multi-Page-Website</p>
+                      <p className="work-heading">Designo-Multi-Page-Website</p>
+
+                      <p className="work-description">
+                        Designo-Multi-Page-Website a responsive website
+                        developed as a solution to the Frontend Mentor
+                        challenge. This dynamic website showcases the fictional
+                        company that required a modern and visually appealing
+                        website to showcase its services and portfolio
+                        presenting a sleek and modern interface that seamlessly
+                        adapts to various devices.
+                      </p>
                       <div className="horizontal"></div>
                     </div>
 
                     <div className="button-container">
                       <Magnetic>
                         <div>
-                          <a href="#about">
-                            <button className="btn-link">Description</button>
+                          <a
+                            href="https://multi-page-website-qxy0by7jb-nel-tech.vercel.app/"
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            <button className="btn-link">Live Site</button>
                           </a>
                         </div>
                       </Magnetic>
+                    </div>
+                  </div>
 
+                  <div className="work-sect">
+                    <div className="img-container">
+                      <img
+                        src="/images/Coffe.jpg"
+                        alt="Coffee-Subscriptio-Site"
+                        className="img-coffee"
+                      />
+                    </div>
+
+                    <div className="work-title">
+                      <p className="work-heading">
+                        Coffeeroasters-Subscription-Site
+                      </p>
+                      <p className="work-description">
+                        {/* Welcome to the CoffeeRoasters Subscription Site, a dynamic web
+                application designed to provide users with a premium coffee
+                subscription experience and Choose from a variety of
+                subscription plans tailored to different coffee preferences and
+                see an order summary modal of their choices. */}
+                        Welcome to CoffeeRoasters Subscription Site, your
+                        one-stop shop for crafting the perfect coffee ritual!
+                        Our user-friendly web application guides you through a
+                        personalized journey, uncovering your ideal coffee
+                        match. Dive into a diverse selection of subscription
+                        plans, categorized by roast level, origin, and flavor
+                        profile. CoffeeRoasters Subscription Site:where
+                        convenience meets quality, and every cup is an
+                        adventure.
+                      </p>
+                      <div className="horizontal"></div>
+                    </div>
+
+                    <div className="button-container">
                       <Magnetic>
                         <div>
                           <a href="#a">
@@ -84,19 +130,11 @@ function Work() {
                     </div>
 
                     <div className="work-title">
-                      <p>Designo-Multi-Page-Website</p>
+                      <p className="work-heading">Designo-Multi-Page-Website</p>
                       <div className="horizontal"></div>
                     </div>
 
                     <div className="button-container">
-                      <Magnetic>
-                        <div>
-                          <a href="#about">
-                            <button className="btn-link">Description</button>
-                          </a>
-                        </div>
-                      </Magnetic>
-
                       <Magnetic>
                         <div>
                           <a href="#a">
@@ -117,52 +155,11 @@ function Work() {
                     </div>
 
                     <div className="work-title">
-                      <p>Designo-Multi-Page-Website</p>
+                      <p className="work-heading">Designo-Multi-Page-Website</p>
                       <div className="horizontal"></div>
                     </div>
 
                     <div className="button-container">
-                      <Magnetic>
-                        <div>
-                          <a href="#about">
-                            <button className="btn-link">Description</button>
-                          </a>
-                        </div>
-                      </Magnetic>
-
-                      <Magnetic>
-                        <div>
-                          <a href="#a">
-                            <button className="btn-link">Live Site</button>
-                          </a>
-                        </div>
-                      </Magnetic>
-                    </div>
-                  </div>
-
-                  <div className="work-sect">
-                    <div className="img-container">
-                      <img
-                        src="/images/Designo.png"
-                        alt="Designo-Multi-Page"
-                        className="img-works"
-                      />
-                    </div>
-
-                    <div className="work-title">
-                      <p>Designo-Multi-Page-Website</p>
-                      <div className="horizontal"></div>
-                    </div>
-
-                    <div className="button-container">
-                      <Magnetic>
-                        <div>
-                          <a href="#about">
-                            <button className="btn-link">Description</button>
-                          </a>
-                        </div>
-                      </Magnetic>
-
                       <Magnetic>
                         <div>
                           <a href="#a">
@@ -173,27 +170,14 @@ function Work() {
                     </div>
                   </div>
                 </small>
-
-                <div className="btn-about">
-                  <Magnetic>
-                    <a
-                      href="https://github.com/Nel-tech"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <button className="btn" id="btn-work">
-                        See More Works
-                      </button>
-                    </a>
-                  </Magnetic>
-                </div>
               </main>
             </div>
           </div>
-        )}
-        <Footer />
-      </div>
-    </motion.div>
+
+          <Footer />
+        </motion.div>
+      </Preloader>
+    </div>
   );
 }
 
