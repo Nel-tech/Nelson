@@ -11,21 +11,21 @@ const reviews = [
     imgUri: "review_img2.jpg",
     backcolor: "#CAEDFF",
     review:
-      "Had an exceptional session. There's basically nothing he explains that I don't comprehend. would recomend him a million times.",
+      "He delivered a high-quality page that met all of my requirements and exceeded my expectations. He was also very affordable and delivered the project on time. I will definitely be using him again for future projects",
   },
   {
-    name: "Angel Yu",
+    name: "Goodness Chia",
     imgUri: "review_img4.jpeg",
     backcolor: "#F4EEEE",
     review:
-      "My business rose to magnanimouse level after getting a professional site from him",
+      "He did an amazing job! He not only made the site look more modern, but he also improved the functionality and performance. He was very easy to work with and always kept me informed of the progress. I am so happy with the results!",
   },
   {
     name: "James Brown",
     imgUri: "review_img3.jpeg",
     backcolor: "#F3FDE8",
     review:
-      "I really appreciate the excellent work. Never knew code rebase could be done so smoothly",
+      "Thrilled with the collaboration with Favour. His frontend development skills turned our ideas into a visually stunning and highly functional reality.",
   },
 ];
 

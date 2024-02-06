@@ -213,7 +213,7 @@ nav {
   margin-top: 10rem;
 }
 
-@media (max-width: 1024px) {
+@media only screen and (min-width: 901px) and (max-width: 1200px) {
   .container {
     margin-left: 2rem;
     margin-right: 2rem;
@@ -232,15 +232,18 @@ nav {
   }
 }
 
-@media (max-width: 768px) {
+@media only screen and (min-width: 601px) and (max-width: 900px) {
   .intro {
+    .typing {
+      line-height: 30px;
+    }
     small {
       flex-direction: column;
       justify-content: left;
       gap: 0rem;
     }
     h1 {
-      font-size: 3.5rem;
+      font-size: 3.5em;
       padding-bottom: 2rem;
       font-weight: bolder;
       transform: scale(1.3);
@@ -278,7 +281,7 @@ nav {
     margin-right: auto;
   }
 }
-@media (max-width: 425px) {
+@media only screen and (max-width: 600px) {
   .container {
     margin-left: 1rem;
     margin-right: 1rem;
@@ -330,7 +333,7 @@ nav {
       font-size: 30px;
     }
     h1 {
-      font-size: 2rem;
+      font-size: 2em;
       padding-bottom: 2rem;
       font-weight: bolder;
       transform: scale(1.1);
@@ -387,9 +390,6 @@ nav {
 }
 @media (max-width: 375px) {
   .intro {
-    .typing {
-      font-size: 10px;
-    }
     h1 {
       font-size: 2rem;
       padding-bottom: 2rem;

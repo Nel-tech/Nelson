@@ -24,11 +24,11 @@ function About() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Simulating a delay, replace this with your actual data loading logic
+   
     const fakeDataLoading = () => {
       setTimeout(() => {
         setLoading(false);
-      }, 2000); // Adjust the time as needed
+      }, 2000); 
     };
 
     fakeDataLoading();
