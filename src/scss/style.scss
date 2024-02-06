@@ -219,7 +219,14 @@ nav {
     margin-right: 2rem;
   }
   .intro {
+    h1 {
+      font-size: 5rem;
+    }
     .lat__works {
+      .lat-title {
+        text-align: center;
+        font-size: 3em;
+      }
       .img-works {
         width: 400px;
         cursor: pointer;
@@ -229,10 +236,18 @@ nav {
         font-size: 14px;
       }
     }
+    .work-sect {
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 }
 
 @media only screen and (min-width: 601px) and (max-width: 900px) {
+  .container {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
   .intro {
     .typing {
       line-height: 30px;
@@ -243,8 +258,8 @@ nav {
       gap: 0rem;
     }
     h1 {
-      font-size: 3.5em;
-      padding-bottom: 2rem;
+      font-size: 3.1em;
+      padding-bottom: 3.5rem;
       font-weight: bolder;
       transform: scale(1.3);
       transform-origin: 0 0;
@@ -283,15 +298,14 @@ nav {
 }
 @media only screen and (max-width: 600px) {
   .container {
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
   }
   .nav-toggler-links {
     display: block;
   }
   .nav__bars {
     display: block;
-    margin-right: 2rem;
   }
   .nav__close {
     font-size: 40px;
@@ -347,13 +361,13 @@ nav {
       line-height: 30px;
     }
     .typing {
-      font-size: 17px;
-      line-height: 20px;
+      font-size: 15px;
+      line-height: 30px;
     }
     .second-section {
       p {
         font-size: 15px;
-        max-width: 600px;
+        max-width: 400px;
       }
     }
     .btn-btns {
@@ -375,16 +389,16 @@ nav {
       }
 
       .img-works {
-        width: 350px;
+        width: 380px;
       }
       .img-container {
         margin-left: auto;
         margin-right: auto;
       }
 
-      .horizontal {
-        display: none;
-      }
+      // .horizontal {
+      //   display: none;
+      // }
     }
   }
 }

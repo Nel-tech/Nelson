@@ -216,19 +216,51 @@
   }
 }
 @media only screen and (min-width: 601px) and (max-width: 900px) {
-  .services .section-heading {
-    margin-left: 2rem;
+  .about-container .About-header {
+    font-size: 40px;
+    max-width: 600px;
+    line-height: 9rem;
+  }
+  .about-container .continous {
+    display: none;
+  }
+  .about-container .about-section {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .about-container .about-section .my-self {
+    font-size: 18px;
+  }
+  .tools {
+    padding-top: 2rem;
+  }
+  .tools-icon {
+    font-size: 30px;
+    color: cornflowerblue;
+  }
+  .tools-img {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .services {
+    height: 800px;
   }
   .services p {
-    max-width: 230px;
+    max-width: 350px;
   }
   .services .services-container {
-    margin-left: 2rem;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    margin-left: 3rem;
   }
 }
 @media only screen and (max-width: 600px) {
   .about-container .About-header {
     font-size: 30px;
+  }
+  .about-container .continous {
+    display: none;
   }
   .about-container .about-section {
     flex-direction: column;
@@ -330,16 +362,32 @@
 }
 
 @media only screen and (min-width: 901px) and (max-width: 1200px) {
+  .work-container .heading {
+    line-height: 8rem;
+  }
   .work-container .lat__works .img-works {
     width: 400px;
     cursor: pointer;
+  }
+  .work-container .lat__works .lat-title {
+    text-align: center;
+    font-size: 3em;
   }
   .work-container .lat__works .work-description {
     max-width: 380px;
     font-size: 14px;
   }
+  .work-container .lat__works .work-sect {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 @media only screen and (min-width: 601px) and (max-width: 900px) {
+  .work-container .heading {
+    font-size: 40px;
+    max-width: 600px;
+    line-height: 9rem;
+  }
   .work-container .lat__works .img-works {
     width: 600px;
     cursor: pointer;
@@ -378,7 +426,8 @@
     font-size: 20px;
   }
   .work-container .lat__works .img-works {
-    width: 350px;
+    width: 380px;
+    padding-bottom: 0.9rem;
   }
 }
 @media (max-width: 375px) {
@@ -699,6 +748,13 @@ nav {
     margin-left: 2rem;
     margin-right: 2rem;
   }
+  .intro h1 {
+    font-size: 5rem;
+  }
+  .intro .lat__works .lat-title {
+    text-align: center;
+    font-size: 3em;
+  }
   .intro .lat__works .img-works {
     width: 400px;
     cursor: pointer;
@@ -707,8 +763,16 @@ nav {
     max-width: 380px;
     font-size: 14px;
   }
+  .intro .work-sect {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 @media only screen and (min-width: 601px) and (max-width: 900px) {
+  .container {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
   .intro .typing {
     line-height: 30px;
   }
@@ -718,8 +782,8 @@ nav {
     gap: 0rem;
   }
   .intro h1 {
-    font-size: 3.5em;
-    padding-bottom: 2rem;
+    font-size: 3.1em;
+    padding-bottom: 3.5rem;
     font-weight: bolder;
     transform: scale(1.3);
     transform-origin: 0 0;
@@ -753,15 +817,14 @@ nav {
 }
 @media only screen and (max-width: 600px) {
   .container {
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
   }
   .nav-toggler-links {
     display: block;
   }
   .nav__bars {
     display: block;
-    margin-right: 2rem;
   }
   .nav__close {
     font-size: 40px;
@@ -813,12 +876,12 @@ nav {
     line-height: 30px;
   }
   .intro .typing {
-    font-size: 17px;
-    line-height: 20px;
+    font-size: 15px;
+    line-height: 30px;
   }
   .intro .second-section p {
     font-size: 15px;
-    max-width: 600px;
+    max-width: 400px;
   }
   .intro .btn-btns {
     margin-top: 3rem;
@@ -837,14 +900,11 @@ nav {
     font-size: 20px;
   }
   .intro .lat__works .img-works {
-    width: 350px;
+    width: 380px;
   }
   .intro .lat__works .img-container {
     margin-left: auto;
     margin-right: auto;
-  }
-  .intro .lat__works .horizontal {
-    display: none;
   }
 }
 @media (max-width: 375px) {

@@ -10,11 +10,11 @@ const Greeting = () => {
     let newGreeting = "";
 
     if (currentTime >= 5 && currentTime < 12) {
-      newGreeting = "Good morning,";
+      newGreeting = "Good morning 👋,";
     } else if (currentTime >= 12 && currentTime < 18) {
-      newGreeting = "Good afternoon,";
+      newGreeting = "Good afternoon 👋,";
     } else {
-      newGreeting = "Good evening,";
+      newGreeting = "Good evening 👋,";
     }
 
     setGreeting(newGreeting);

@@ -55,7 +55,7 @@ function About() {
                 <h1 className="my-self">
                   <div className="greeting-flex">
                     <Greeting2 />
-                    <span> 👋</span>{" "}
+                  
                   </div>
                   I'm Adegbasa Favour, a Dynamic Creative Web Developer with
                   over 4 years of immersive experience. I specialize in bringing

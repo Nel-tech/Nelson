@@ -163,7 +163,7 @@ function Intro() {
             <div className="button-container">
               <Magnetic>
                 <div>
-                  <a href="#a">
+                  <a href="https://coffeeroasters-subscription-site-boxa1qf9o-nel-tech.vercel.app/index.html">
                     <button className="btn-link">Live Site</button>
                   </a>
                 </div>
@@ -174,14 +174,14 @@ function Intro() {
           <div className="work-sect">
             <div className="img-container">
               <img
-                src="/images/Designo2.jpg"
-                alt="Designo-Multi-Page"
+                src="/images/SpaCare.png"
+                alt="SpaCare-Website"
                 className="img-works"
               />
             </div>
 
             <div className="work-title">
-              <p className="work-heading">Designo-Multi-Page-Website</p>
+              <p className="work-heading">SpaCare Web Application</p>
               <p className="work-description">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 Voluptatibus sunt explicabo natus sequi earum velit odit magni
@@ -206,14 +206,14 @@ function Intro() {
           <div className="work-sect">
             <div className="img-container">
               <img
-                src="/images/Designo2.jpg"
-                alt="Designo-Multi-Page"
+                src="/images/MediCare.png"
+                alt="MediCare"
                 className="img-works"
               />
             </div>
 
             <div className="work-title">
-              <p className="work-heading">Designo-Multi-Page-Website</p>
+              <p className="work-heading">MediCare Web Application</p>
               <p className="work-description">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 Voluptatibus sunt explicabo natus sequi earum velit odit magni
