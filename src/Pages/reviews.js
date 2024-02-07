@@ -21,7 +21,7 @@ const reviews = [
       "He did an amazing job! He not only made the site look more modern, but he also improved the functionality and performance. He was very easy to work with and always kept me informed of the progress. I am so happy with the results!",
   },
   {
-    name: "James Brown",
+    name: "Blessing",
     imgUri: "review_img3.jpeg",
     backcolor: "#F3FDE8",
     review:

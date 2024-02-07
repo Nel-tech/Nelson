@@ -244,12 +244,13 @@
   .services {
     height: 800px;
     p {
-      max-width: 350px;
+      max-width: 300px;
     }
     .services-container {
       flex-direction: column;
       justify-content: space-around;
       align-self: center;
+      margin-left: 3em;
     }
   }
 }

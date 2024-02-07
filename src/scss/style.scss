@@ -252,17 +252,20 @@ nav {
     .typing {
       line-height: 30px;
     }
+    .second-section {
+      p {
+        letter-spacing: 2px;
+      }
+    }
     small {
       flex-direction: column;
       justify-content: left;
       gap: 0rem;
     }
     h1 {
-      font-size: 3.1em;
+      font-size: 4.5em;
       padding-bottom: 3.5rem;
       font-weight: bolder;
-      transform: scale(1.3);
-      transform-origin: 0 0;
     }
     .lat__works {
       .img-works {
@@ -350,8 +353,6 @@ nav {
       font-size: 2em;
       padding-bottom: 2rem;
       font-weight: bolder;
-      transform: scale(1.1);
-      transform-origin: 0 0;
     }
     h2 {
       font-size: 15px;
@@ -376,6 +377,7 @@ nav {
 
     .lat__works {
       padding-top: 3rem;
+
       p {
         font-size: 20px;
       }
@@ -389,7 +391,7 @@ nav {
       }
 
       .img-works {
-        width: 380px;
+        width: 350px;
       }
       .img-container {
         margin-left: auto;
@@ -405,29 +407,31 @@ nav {
 @media (max-width: 375px) {
   .intro {
     h1 {
-      font-size: 2rem;
+      font-size: 1.8rem;
       padding-bottom: 2rem;
       font-weight: bolder;
-      transform: scale(1);
-      transform-origin: 0 0;
+     
     }
     .mid-text {
       font-size: 15px;
       max-width: 300px;
+      
     }
     .btn-btns {
-      gap: 1rem;
+      gap: 0rem;
     }
     .second-section {
       p {
         font-size: 15px;
         max-width: 300px;
         line-height: 30px;
+      
       }
     }
     .lat__works {
       .img-works {
         width: 300px;
+        
       }
       .img-container {
         margin-left: auto;
@@ -436,6 +440,7 @@ nav {
       .work-description {
         max-width: 300px;
         font-size: 14px;
+       
       }
     }
   }

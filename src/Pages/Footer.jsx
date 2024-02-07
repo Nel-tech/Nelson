@@ -57,13 +57,16 @@ const StyledFooter = styled.footer`
   }
 
   @media (max-width: 425px) {
+    styled.footer{
+      height: 30vh;
+    }
     > .footer-group {
       height: 90vh;
 
       > .footer-elements {
         margin: 0;
         > h1 {
-          font-size: 10vw;
+          font-size: 8vw;
         }
 
         > .element {

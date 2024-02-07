@@ -75,9 +75,9 @@ function Intro() {
 
       <main className="second-section">
         <p>
-          Guided by innovation in the digital realm, we reshape industry
-          standards through collaborative efforts, consistently pushing
-          boundaries with a pioneering spirit and a commitment to simplicity
+          Together, we unlock the potential of groundbreaking ideas through
+          effortless collaboration, redefining industry standards with a
+          pioneering spirit and a passion for simplicity.
         </p>
         <div className="btn-about">
           <Magnetic>
@@ -105,12 +105,12 @@ function Intro() {
               <p className="work-heading">Designo-Multi-Page-Website</p>
 
               <p className="work-description">
-                Designo-Multi-Page-Website a responsive website developed as a
-                solution to the Frontend Mentor challenge. This dynamic website
-                showcases the fictional company that required a modern and
-                visually appealing website to showcase its services and
-                portfolio presenting a sleek and modern interface that
-                seamlessly adapts to various devices.
+                Built for the Frontend Mentor challenge, Designo reimagines a
+                fictional company's online presence. This dynamic website boasts
+                a modern, visually-appealing interface that seamlessly adapts to
+                any device. Showcasing the company's services and portfolio,
+                Designo delivers a sleek and user-friendly experience,
+                effortlessly engaging visitors across all platforms.
               </p>
               <div className="horizontal"></div>
             </div>
@@ -142,20 +142,12 @@ function Intro() {
             <div className="work-title">
               <p className="work-heading">Coffeeroasters-Subscription-Site</p>
               <p className="work-description">
-                Welcome to the CoffeeRoasters Subscription Site, a dynamic web
-                application designed to provide users with a premium coffee
-                subscription experience and Choose from a variety of
-                subscription plans tailored to different coffee preferences and
-                see an order summary modal of their choices. CoffeeRoasters
-                Subscription:where convenience meets quality.
-                {/* Welcome to CoffeeRoasters Subscription Site, your one-stop shop
-                for crafting the perfect coffee ritual! Our user-friendly web
-                application guides you through a personalized journey,
-                uncovering your ideal coffee match. Dive into a diverse
-                selection of subscription plans, categorized by roast level,
-                origin, and flavor profile. CoffeeRoasters Subscription
-                Site:where convenience meets quality, and every cup is an
-                adventure. */}
+                Explore the CoffeeRoasters Subscription Site for a premium
+                coffee journey. Choose from diverse subscription plans crafted
+                for unique tastes. Access an order summary modal for a
+                personalized brew. Where convenience seamlessly blends with
+                top-notch quality, ensuring an exceptional and satisfying
+                experience for coffee enthusiasts.
               </p>
               <div className="horizontal"></div>
             </div>
@@ -163,7 +155,11 @@ function Intro() {
             <div className="button-container">
               <Magnetic>
                 <div>
-                  <a href="https://coffeeroasters-subscription-site-boxa1qf9o-nel-tech.vercel.app/index.html">
+                  <a
+                    href="https://coffeeroasters-subscription-site-boxa1qf9o-nel-tech.vercel.app/index.html"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <button className="btn-link">Live Site</button>
                   </a>
                 </div>
@@ -196,7 +192,7 @@ function Intro() {
               <Magnetic>
                 <div>
                   <a href="#a">
-                    <button className="btn-link">Live Site</button>
+                    <button className="btn-link">Coming Soon</button>
                   </a>
                 </div>
               </Magnetic>
@@ -228,7 +224,7 @@ function Intro() {
               <Magnetic>
                 <div>
                   <a href="#a">
-                    <button className="btn-link">Live Site</button>
+                    <button className="btn-link">Coming Soon</button>
                   </a>
                 </div>
               </Magnetic>
