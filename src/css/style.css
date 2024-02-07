@@ -423,7 +423,11 @@
   .work-container .lat__works {
     padding-top: 3rem;
   }
-  .work-container .lat__works p {
+  .work-container .lat__works .work-description {
+    max-width: 350px;
+    font-size: 14px;
+  }
+  .work-container .lat__works .work-heading {
     font-size: 20px;
   }
   .work-container .lat__works .img-works {
@@ -433,6 +437,13 @@
 }
 @media (max-width: 375px) {
   .work-container h1 {
+    font-size: 20px;
+  }
+  .work-container .lat__works .work-description {
+    max-width: 350px;
+    font-size: 14px;
+  }
+  .work-container .lat__works .work-heading {
     font-size: 20px;
   }
   .work-container .lat__works .img-works {
