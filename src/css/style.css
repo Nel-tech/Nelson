@@ -197,6 +197,9 @@
   }
   .tools-img {
     gap: 1.5rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
   }
   .services .section-heading {
     margin-left: 0rem;
@@ -273,12 +276,12 @@
     padding-top: 2rem;
   }
   .tools-icon {
-    font-size: 20px;
+    font-size: 25px;
     color: cornflowerblue;
   }
   .tools-img {
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: center;
   }
   .services {
     height: 800px;
