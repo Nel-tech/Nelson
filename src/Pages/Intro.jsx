@@ -94,11 +94,17 @@ function Intro() {
         <small>
           <div className="work-sect">
             <div className="img-container">
-              <img
-                src="/images/Designo2.jpg"
-                alt="Designo-Multi-Page"
-                className="img-works"
-              />
+              <a
+                href="https://multi-page-website-qxy0by7jb-nel-tech.vercel.app/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  src="/images/Designo2.jpg"
+                  alt="Designo-Multi-Page"
+                  className="img-works"
+                />
+              </a>
             </div>
 
             <div className="work-title">
@@ -132,11 +138,17 @@ function Intro() {
 
           <div className="work-sect">
             <div className="img-container">
-              <img
-                src="/images/Coffee2.jpg"
-                alt="Coffee-Subscriptio-Site"
-                className="img-works"
-              />
+              <a
+                href="https://coffeeroasters-subscription-site-boxa1qf9o-nel-tech.vercel.app/index.html"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  src="/images/Coffee2.jpg"
+                  alt="Coffee-Subscriptio-Site"
+                  className="img-works"
+                />
+              </a>
             </div>
 
             <div className="work-title">
