@@ -141,6 +141,13 @@
       p {
         font-size: 20px;
       }
+      .work-description {
+        max-width: 350px;
+        font-size: 14px;
+      }
+      .work-heading {
+        font-size: 20px;
+      }
 
       .img-works {
         width: 350px;
@@ -153,6 +160,13 @@
 @media (max-width: 375px) {
   .work-container {
     h1 {
+      font-size: 20px;
+    }
+    .work-description {
+      max-width: 350px;
+      font-size: 14px;
+    }
+    .work-heading {
       font-size: 20px;
     }
     .lat__works {
