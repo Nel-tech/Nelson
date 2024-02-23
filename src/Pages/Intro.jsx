@@ -181,21 +181,23 @@ function Intro() {
 
           <div className="work-sect">
             <div className="img-container">
-              <img
-                src="/images/SpaCare.png"
-                alt="SpaCare-Website"
-                className="img-works"
-              />
+              <a
+                href="https://furniture-rental.vercel.app/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  src="/images/Furniture-Rental.png"
+                  alt="Furniture-Rental"
+                  className="img-works"
+                />
+              </a>
             </div>
 
             <div className="work-title">
-              <p className="work-heading">SpaCare Web Application</p>
+              <p className="work-heading">Furniture Rental </p>
               <p className="work-description">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Voluptatibus sunt explicabo natus sequi earum velit odit magni
-                doloribus veniam quo tempore molestias quibusdam qui saepe
-                cupiditate adipisci quam eaque harum a id, atque quas officiis!
-                Architecto totam alias sit rem?
+              Thrilled to be part of the Furniture Rental Project Twitter Challenge! 🛋️🚀 Our team is redefining the way we furnish spaces with innovation and creativity. Join us on this coding journey as we shape the future of furniture rental. #FurnitureRentalChallenge #TechInnovation #CodeWithPassion 💻✨
               </p>
               <div className="horizontal"></div>
             </div>
@@ -203,8 +205,12 @@ function Intro() {
             <div className="button-container">
               <Magnetic>
                 <div>
-                  <a href="#a">
-                    <button className="btn-link">Coming Soon</button>
+                  <a
+                     href="https://furniture-rental.vercel.app/"
+                     target="_blank"
+                     rel="noreferrer"
+                  >
+                    <button className="btn-link">Live Site</button>
                   </a>
                 </div>
               </Magnetic>

@@ -125,6 +125,45 @@ function Work() {
             </div>
           </div>
 
+
+          <div className="work-sect">
+            <div className="img-container">
+              <a
+                href="https://furniture-rental.vercel.app/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  src="/images/Furniture-Rental.png"
+                  alt="Furniture-Rental"
+                  className="img-works"
+                />
+              </a>
+            </div>
+
+            <div className="work-title">
+              <p className="work-heading">Furniture Rental </p>
+              <p className="work-description">
+              Thrilled to be part of the Furniture Rental Project Twitter Challenge! 🛋️🚀 Our team is redefining the way we furnish spaces with innovation and creativity. Join us on this coding journey as we shape the future of furniture rental. #FurnitureRentalChallenge #TechInnovation #CodeWithPassion 💻✨
+              </p>
+              <div className="horizontal"></div>
+            </div>
+
+            <div className="button-container">
+              <Magnetic>
+                <div>
+                  <a
+                     href="https://furniture-rental.vercel.app/"
+                     target="_blank"
+                     rel="noreferrer"
+                  >
+                    <button className="btn-link">Live Site</button>
+                  </a>
+                </div>
+              </Magnetic>
+            </div>
+          </div>
+
           <div className="work-sect">
             <div className="img-container">
               <img
