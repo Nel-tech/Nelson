@@ -13,19 +13,21 @@ const reviews = [
     review:
       "He delivered a high-quality page that met all of my requirements and exceeded my expectations. He was also very affordable and delivered the project on time. I will definitely be using him again for future projects",
   },
+
   {
-    name: "Goodness Chia",
+    name: "Adeiza",
+    imgUri: "review_img3.jpg",
+    backcolor: "#F3FDE8",
+    review:
+      "Thrilled with the collaboration with Favour. His frontend development skills turned our ideas into a visually stunning and highly functional reality.",
+  },
+
+  {
+    name: "Caroline",
     imgUri: "review_img4.jpeg",
     backcolor: "#F4EEEE",
     review:
       "He did an amazing job! He not only made the site look more modern, but he also improved the functionality and performance. He was very easy to work with and always kept me informed of the progress. I am so happy with the results!",
-  },
-  {
-    name: "Blessing",
-    imgUri: "review_img3.jpeg",
-    backcolor: "#F3FDE8",
-    review:
-      "Thrilled with the collaboration with Favour. His frontend development skills turned our ideas into a visually stunning and highly functional reality.",
   },
 ];
 
