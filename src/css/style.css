@@ -327,7 +327,7 @@
   display: flex;
   flex-flow: wrap;
   justify-content: left;
-  gap: 8rem;
+  gap: 4rem;
 }
 .work-container .work-sect {
   margin-bottom: 1rem;

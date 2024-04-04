@@ -197,7 +197,11 @@ function Intro() {
             <div className="work-title">
               <p className="work-heading">Furniture Rental </p>
               <p className="work-description">
-              Thrilled to be part of the Furniture Rental Project Twitter Challenge! 🛋️🚀 Our team is redefining the way we furnish spaces with innovation and creativity. Join us on this coding journey as we shape the future of furniture rental. #FurnitureRentalChallenge #TechInnovation #CodeWithPassion 💻✨
+                Thrilled to be part of the Furniture Rental Project Twitter
+                Challenge! 🛋️🚀 Our team is redefining the way we furnish spaces
+                with innovation and creativity. Join us on this coding journey
+                as we shape the future of furniture rental.
+                #FurnitureRentalChallenge #TechInnovation #CodeWithPassion 💻✨
               </p>
               <div className="horizontal"></div>
             </div>
@@ -206,9 +210,9 @@ function Intro() {
               <Magnetic>
                 <div>
                   <a
-                     href="https://furniture-rental.vercel.app/"
-                     target="_blank"
-                     rel="noreferrer"
+                    href="https://furniture-rental.vercel.app/"
+                    target="_blank"
+                    rel="noreferrer"
                   >
                     <button className="btn-link">Live Site</button>
                   </a>
@@ -220,20 +224,22 @@ function Intro() {
           <div className="work-sect">
             <div className="img-container">
               <img
-                src="/images/MediCare.png"
-                alt="MediCare"
+                src="/images/RestCountriesApi.jpg"
+                alt="SpaCare-Website"
                 className="img-works"
               />
             </div>
 
             <div className="work-title">
-              <p className="work-heading">MediCare Web Application</p>
+              <p className="work-heading">
+                Rest-Countries-Api-With-Color-Theme-Switcher-Master
+              </p>
               <p className="work-description">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Voluptatibus sunt explicabo natus sequi earum velit odit magni
-                doloribus veniam quo tempore molestias quibusdam qui saepe
-                cupiditate adipisci quam eaque harum a id, atque quas officiis!
-                Architecto totam alias sit rem?
+                Discover, search, and explore countries worldwide with ease:
+                browse through our comprehensive homepage featuring all
+                countries, filter by region, toggle between light and dark
+                modes, and delve into detailed information by clicking on any
+                country to uncover its rich heritage and bordering nations.
               </p>
               <div className="horizontal"></div>
             </div>
@@ -241,8 +247,8 @@ function Intro() {
             <div className="button-container">
               <Magnetic>
                 <div>
-                  <a href="#a">
-                    <button className="btn-link">Coming Soon</button>
+                  <a href="https://rest-countries-api-with-color-theme-switcher-master-eta.vercel.app/">
+                    <button className="btn-link">Live Site</button>
                   </a>
                 </div>
               </Magnetic>
