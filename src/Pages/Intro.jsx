@@ -27,7 +27,7 @@ function Intro() {
     <div className="intro">
       <div className="intro-section">
         <p className="intro-p">Hey 😉 I'm</p>
-        <h1 className="intro-h">Adegbasa - Favour</h1>
+        <h1 className="intro-h">Nelson - Favour</h1>
       </div>
       <div>
         <section className="section">
