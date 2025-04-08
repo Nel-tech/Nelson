@@ -148,7 +148,7 @@ const BaseFooter = ({ pos }) => {
 
       <hr />
       <p className="copyright">
-        &copy; {year} Portfolio - Adegbasa Favour. All rights reserved
+        &copy; {year} Portfolio - Nelson Favour. All rights reserved
       </p>
     </StyledDiv>
   );
