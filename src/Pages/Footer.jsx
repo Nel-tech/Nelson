@@ -103,11 +103,11 @@ const Footer = () => {
             </Magnetic>
           </div>
           <div className="element">
-            <Magnetic>
+{/*             <Magnetic>
               <p>
                 <a href="tel:+2349081715621">+2349081715621</a>
               </p>
-            </Magnetic>
+            </Magnetic> */}
           </div>
           <div className="footer-contact-button">
             <Magnetic>
