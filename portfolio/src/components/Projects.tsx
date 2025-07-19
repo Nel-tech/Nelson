@@ -30,6 +30,23 @@ const projects = [
         tech: [<SiNextdotjs />, <SiTailwindcss />,<SiPython />, <SiFastapi />, <SiPrisma />, <SiSupabase />,  ],
         link: "#",
     },
+
+    {
+        title: "PeekPolicy",
+        description:
+            "Browser extension that summarizes Terms & Conditions and flags risky clauses. Built with JS and Node.",
+        image: "/images/PolicyPeek.png",
+        tech: [<SiNextdotjs />, <SiTailwindcss />,<SiPython />, <SiFastapi />, <SiPrisma />, <SiSupabase />,  ],
+        link: "#",
+    },
+    {
+        title: "PeekPolicy",
+        description:
+            "Browser extension that summarizes Terms & Conditions and flags risky clauses. Built with JS and Node.",
+        image: "/images/PolicyPeek.png",
+        tech: [<SiNextdotjs />, <SiTailwindcss />, <SiPython />, <SiFastapi />, <SiPrisma />, <SiSupabase />,],
+        link: "#",
+    },
 ];
 
 const cardVariants = {
@@ -54,9 +71,9 @@ export default function Projects() {
                     initial={{ opacity: 0, y: -20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6 }}
-                    className="text-4xl md:text-5xl font-extrabold font-montserrat mb-16"
+                    className="text-4xl  md:text-5xl font-extrabold font-montserrat mb-16"
                 >
-                    🚀 My Work
+                     Selected Project
                 </motion.h2>
 
                 <div className="grid md:grid-cols-2 gap-12">
@@ -80,12 +97,12 @@ export default function Projects() {
                             />
 
                             {/* Title */}
-                            <h3 className="text-2xl font-bold mb-2 group-hover:text-cyan-400 transition">
+                            <h3 className="text-2xl  font-roboto font-bold mb-2 group-hover:text-cyan-400 transition">
                                 {project.title}
                             </h3>
 
                             {/* Description */}
-                            <p className="text-sm text-white/80 group-hover:text-white/90 mb-4">
+                            <p className="text-sm leading-relaxed tracking-wide font-roboto text-white/80 group-hover:text-white/90 mb-4">
                                 {project.description}
                             </p>
 
@@ -104,7 +121,7 @@ export default function Projects() {
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 whileHover={{ x: 4 }}
-                                className="inline-flex items-center text-cyan-400 font-medium"
+                                className="inline-flex font-roboto items-center text-cyan-400 font-medium"
                             >
                                 View Project <ArrowUpRight className="ml-2 w-4 h-4" />
                             </motion.a>
