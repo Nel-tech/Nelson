@@ -5,10 +5,16 @@ import "./globals.css";
 const roboto = Roboto({
   variable: "--font-roboto",
   subsets: ["latin"],
+  weight: ["300", "400", "500", "700"], // Add explicit weights
+  display: "swap", 
 });
 
-const montserrat = Montserrat({ subsets: ['latin'], weight: '400', variable: '--font-montserrat' });
-
+const montserrat = Montserrat({
+  subsets: ['latin'],
+  weight: ["300", "400", "500", "600", "700", "800"],
+  variable: '--font-montserrat',
+  display: "swap", 
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",

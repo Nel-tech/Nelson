@@ -5,10 +5,9 @@ import { FaGithub, FaXTwitter, FaWhatsapp } from "react-icons/fa6";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
 
 const navLinks = [
-  { label: "Projects", href: "/projects" },
-  { label: "Stacks", href: "/stacks" },
-  { label: "About", href: "/about" },
-  { label: "Contact", href: "/contact" },
+  { label: "Projects", href: "#projects" },
+  { label: "Stacks", href: "#stacks" },
+  { label: "About", href: "#about" },
 ];
 
 export default function Navbar() {
@@ -17,12 +16,12 @@ export default function Navbar() {
       {/* Top Navbar */}
       <header className="w-full flex justify-center fixed top-0 z-50 mt-4">
         <nav className="bg-zinc-900/80 backdrop-blur-md border border-white/10 text-white px-8 py-3 rounded-full shadow-lg flex items-center space-x-8">
-          <ul className="flex items-center gap-6 text-sm font-medium">
+          <ul className="flex items-center gap-6 text-base tracking-wider font-medium">
             {navLinks.map((link, i) => (
               <li key={link.label} className="flex items-center">
                 <a
                   href={link.href}
-                  className="hover:text-purple-400 font-roboto transition-colors duration-200"
+                  className="hover:text-emerald-400 font-roboto transition-colors duration-200"
                 >
                   {link.label}
                 </a>
@@ -33,9 +32,15 @@ export default function Navbar() {
             ))}
           </ul>
 
-          <Button className="ml-4 cursor-pointer font-roboto bg-[#6495ED] hover:bg-[#3B82F6] transition-colors text-white text-sm px-5 py-2 rounded-full flex items-center gap-2 font-semibold shadow-md">
-            Work With Me <Handshake size={16} />
-          </Button>
+          <a
+            href="https://wa.me/2349081715621"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Button className="ml-4 cursor-pointer font-roboto tracking-wider bg-emerald-400 hover:bg-emerald-500 transition-colors text-white text-sm px-5 py-2 rounded-full flex items-center gap-2 font-semibold shadow-md">
+              Work With Me <Handshake size={16} />
+            </Button>
+          </a>
         </nav>
       </header>
 
@@ -46,7 +51,7 @@ export default function Navbar() {
           <Tooltip>
             <TooltipTrigger asChild>
               <a
-                href="https://twitter.com/yourhandle"
+                href="https://x.com/manlike_favour"
                 target="_blank"
                 className="text-white hover:text-[#1DA1F2] transition-all duration-200"
               >
@@ -60,7 +65,7 @@ export default function Navbar() {
           <Tooltip>
             <TooltipTrigger asChild>
               <a
-                href="https://github.com/yourusername"
+                href="https://github.com/Nel-tech"
                 target="_blank"
                 className="text-white hover:text-[#cdd9e5] transition-all duration-200"
               >
@@ -74,7 +79,7 @@ export default function Navbar() {
           <Tooltip>
             <TooltipTrigger asChild>
               <a
-                href="https://wa.me/yourwhatsapplink"
+                href="https://wa.me/2349081715621"
                 target="_blank"
                 className="text-white hover:text-[#25D366] transition-all duration-200"
               >
@@ -88,7 +93,7 @@ export default function Navbar() {
         </div>
       </TooltipProvider>
 
-      {/* Bounce keyframe animation (add to your globals.css or Tailwind config) */}
+      
       <style jsx global>{`
         @keyframes bounceOnce {
           0%, 100% {

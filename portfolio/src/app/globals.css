@@ -111,7 +111,15 @@
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.556 0 0);
 }
-
+@layer utilities {
+  .font-roboto {
+    font-family: var(--font-roboto), sans-serif;
+  }
+  
+  .font-montserrat {
+    font-family: var(--font-montserrat), sans-serif;
+  }
+}
 @layer base {
   * {
     @apply border-border outline-ring/50;

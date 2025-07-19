@@ -54,12 +54,12 @@ const techStacks = [
     { icon: <SiSupabase className="text-green-300" />, name: "Supabase" },
     { icon: <SiFirebase className="text-orange-400" />, name: "Firebase" },
     { icon: <SiFramer className="text-pink-400" />, name: "Framer Motion" },
-    { icon: <FastApiIcon />, name: "FastAPI" }, // 👈 Added FastAPI here
+    { icon: <FastApiIcon />, name: "FastAPI" }, 
 ];
 
 export default function TechStacks() {
     return (
-        <section className="py-20 bg-zinc-950 text-white px-4 md:px-12">
+        <section id="stacks" className="py-20 bg-zinc-950 text-white px-4 md:px-12">
             <motion.div
                 initial={{ opacity: 0, y: 40 }}
                 animate={{ opacity: 1, y: 0 }}

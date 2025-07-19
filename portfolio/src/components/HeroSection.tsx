@@ -50,7 +50,7 @@ export default function HeroSection() {
         className="relative z-10 max-w-3xl text-center"
       >
 
-        <h1 className="text-4xl font-montserrat md:text-6xl font-extrabold text-white leading-tight text-center">
+        <h1 className="text-4xl   font-montserrat md:text-6xl font-extrabold text-white leading-relaxed text-center">
           Hey There, <br />
           I'm{" "}
           <motion.span
@@ -69,20 +69,21 @@ export default function HeroSection() {
   and delightful digital products. 
 </p>
 
-        {/* CTA Button */}
-        <motion.button
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
-          type="button"
-          className="mt-8 inline-flex items-center gap-2 px-6 py-3 bg-cornflowerblue hover:bg-blue-500 text-white rounded-full font-semibold transition"
+        
+        <a
+          href="https://wa.me/2349081715621" 
+          target="_blank"
+          rel="noopener noreferrer"
         >
-          Hire Me <Handshake size={18} />
-        </motion.button>
-
-        {/* Availability Badge */}
-        <div className="mt-6 inline-flex items-center gap-2 text-green-400 bg-white/5 px-4 py-2 rounded-full border border-green-500/20 shadow-inner text-sm font-medium">
-          ✅ Currently Available
-        </div>
+          <motion.button
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            type="button"
+            className="mt-8 inline-flex cursor-pointer items-center gap-2 px-6 py-3 bg-emerald-400 hover:bg-emerald-500 focus:ring-2 focus:ring-emerald-300 text-white rounded-full font-roboto tracking-wide font-semibold transition duration-200 shadow-lg"
+          >
+            Let's Talk
+          </motion.button>
+        </a>
       </motion.div>
     </section>
   );
