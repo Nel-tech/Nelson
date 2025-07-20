@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 
 const rotatingTitles = [
   " Nelson Adegbasa",
-  "Fullstack Developer",
+  "A Fullstack Developer",
 ];
 
 export default function HeroSection() {
@@ -50,24 +50,27 @@ export default function HeroSection() {
         className="relative z-10 max-w-3xl text-center"
       >
 
-        <h1 className="text-4xl   font-montserrat md:text-6xl font-extrabold text-white leading-relaxed text-center">
-          Hey There, <br />
-          I'm{" "}
-          <motion.span
-            key={index}
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            className="inline-block text-white bg-clip-text  drop-shadow-lg"
-          >
-            {rotatingTitles[index]}
-          </motion.span>
+        <h1 className="text-4xl md:text-5xl lg:text-6xl leading-tight font-montserrat font-extrabold text-white text-center mt-24 md:mt-32 lg:mt-5">
+          <span className="block">Hey There,</span>
+          <span className="block">
+            I'm{" "}
+            <motion.span
+              key={index}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+              className="inline-block text-white drop-shadow-lg"
+            >
+              {rotatingTitles[index]}
+            </motion.span>
+          </span>
         </h1>
-        <p className="text-lg tracking-wider font-roboto md:text-xl text-white/80 mt-4 max-w-2xl mx-auto">
-  A <span className="font-semibold mr-1 ">Fullstack Developer</span> 
-  with a love for building sleek user interfaces, scalable backend systems, 
-  and delightful digital products. 
-</p>
+
+        <p className="text-base md:text-lg lg:text-xl tracking-wider font-light font-roboto text-white/80 mt-4 max-w-2xl mx-auto text-center leading-relaxed">
+          A <span className="font-semibold mr-1">Fullstack Developer</span>
+          with a love for building sleek user interfaces, scalable backend systems,
+          and delightful digital products.
+        </p>
 
         
         <a

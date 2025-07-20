@@ -28,6 +28,7 @@ const projects = [
         image: "/images/Photosnap.png",
         tech: [techIcons.next, techIcons.tailwind, techIcons.reactquery, techIcons.ts, techIcons.express, techIcons.mongodb, techIcons.cloudinary],
         link: "https://photo-snap-gallery.vercel.app/",
+        code:"https://github.com/Nel-tech/PhotoSnap"
     },
     {
         title: "KavodFin-Forex Signal Sales Funnel",
@@ -42,6 +43,7 @@ const projects = [
         image: "/images/PolicyPeek.png",
         tech: [techIcons.next, techIcons.tailwind, techIcons.reactquery, techIcons.python, techIcons.fastapi, techIcons.prisma, techIcons.supabase],
         link: "https://policypeek.vercel.app/",
+        code:"https://github.com/Nel-tech/PolicyPeek"
     },
 ];
 
@@ -73,7 +75,7 @@ export default function Projects() {
                      Selected Project
                 </motion.h2>
 
-                <div className="grid md:grid-cols-2 gap-12">
+                <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-12">
                     {projects.map((project, i) => (
                         <motion.div
                             key={project.title}
@@ -113,6 +115,8 @@ export default function Projects() {
                             </div>
 
                             {/* CTA */}
+                            <div className="flex justify-between items-center">
+
                             <motion.a
                                 href={project.link}
                                 target="_blank"
@@ -122,6 +126,17 @@ export default function Projects() {
                             >
                                 View Project <ArrowUpRight className="ml-2 w-4 h-4" />
                             </motion.a>
+
+                                <motion.a
+                                    href={project.code}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    whileHover={{ x: 4 }}
+                                    className="inline-flex font-roboto items-center text-emerald-400 font-medium"
+                                >
+                                    View Code <ArrowUpRight className="ml-2 w-4 h-4" />
+                                </motion.a>
+                            </div>
 
                         </motion.div>
                     ))}

@@ -19,7 +19,7 @@ export default function Footer() {
             color: "hover:text-emerald-400",
         },
         {
-            href: "https://www.linkedin.com/in/nelson-adegbasa-858b88365", // Fixed: added https://
+            href: "https://www.linkedin.com/in/nelson-adegbasa-858b88365", 
             icon: <FaLinkedin />,
             label: "LinkedIn",
             color: "hover:text-blue-400",
@@ -64,7 +64,7 @@ export default function Footer() {
                     initial={{ opacity: 0, scale: 0.9 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ delay: 0.3, duration: 0.6 }}
-                    className="text-2xl md:text-3xl font-semibold text-emerald-400 font-montserrat"
+                    className="text-xl lg:text-3xl md:text-3xl font-semibold text-emerald-400 font-montserrat"
                 >
                     favournelson82@gmail.com
                 </motion.p>
