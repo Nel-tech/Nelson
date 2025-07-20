@@ -84,7 +84,7 @@ export default function HeroSection() {
             type="button"
             className="mt-8 inline-flex cursor-pointer items-center gap-2 px-6 py-3 bg-emerald-400 hover:bg-emerald-500 focus:ring-2 focus:ring-emerald-300 text-white rounded-full font-roboto tracking-wide font-semibold transition duration-200 shadow-lg"
           >
-            Let's Talk
+            Let&apos;s Talk
           </motion.button>
         </a>
       </motion.div>
