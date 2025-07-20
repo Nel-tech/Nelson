@@ -24,7 +24,10 @@ export default function About() {
                     For me, every project is a chance to blend design, logic, and constant learning — shipping code that not only solves real problems but elevates the entire user journey. <span className="text-white font-medium">Always evolving. Always building.</span>
                 </p>
                 <p className="text-zinc-500 italic text-sm">
-                    "Code is not just what I write — it&apos;s what I shape the world with."
+                    <p className="text-zinc-500 italic text-sm">
+                        <span>&quot;Code is not just what I write — it&apos;s what I shape the world with.&quot;</span>
+                    </p>
+
                 </p>
             </motion.div>
         </section>
