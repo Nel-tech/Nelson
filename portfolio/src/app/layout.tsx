@@ -1,20 +1,21 @@
 import type { Metadata } from "next";
 import { Roboto, Montserrat } from "next/font/google";
 import "./globals.css";
-import { Analytics } from "@vercel/analytics/next"
+import { Analytics } from "@vercel/analytics/next";
+import Head from "next/head"; // ← import this
 
 const roboto = Roboto({
   variable: "--font-roboto",
   subsets: ["latin"],
-  weight: ["300", "400", "500", "700"], 
-  display: "swap", 
+  weight: ["300", "400", "500", "700"],
+  display: "swap",
 });
 
 const montserrat = Montserrat({
-  subsets: ['latin'],
+  subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700", "800"],
-  variable: '--font-montserrat',
-  display: "swap", 
+  variable: "--font-montserrat",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -34,12 +35,11 @@ export const metadata: Metadata = {
     title: "Nelson Adegbasa – Fullstack Developer",
     description:
       "Browse the portfolio of Nelson Favour showcasing modern web development projects and skills.",
-    url: "https://nelson-ade.vercel.app/", 
+    url: "https://nelson-ade.vercel.app/",
     siteName: "Nelson Favour Portfolio",
     type: "website",
   },
 };
-
 
 export default function RootLayout({
   children,
@@ -48,10 +48,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <Head>
+        <meta
+          name="google-site-verification"
+          content="mr6DpKGyOAKnB0eQH0DQByStxObAfiiRoG9BWEtTkAs"
+        />
+      </Head>
       <body
         className={`${roboto.variable} ${montserrat.variable} antialiased`}
       >
-        <Analytics/>
+        <Analytics />
         {children}
       </body>
     </html>
