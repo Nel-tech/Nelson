@@ -1,7 +1,7 @@
 "use client";
 
 import { motion, AnimatePresence } from "framer-motion";
-import { Handshake } from "lucide-react";
+
 import { useEffect, useState } from "react";
 
 const rotatingTitles = [
@@ -50,10 +50,10 @@ export default function HeroSection() {
         className="relative z-10 max-w-3xl text-center"
       >
 
-        <h1 className="text-4xl md:text-5xl lg:text-6xl leading-tight font-montserrat font-extrabold text-white text-center mt-24 md:mt-32 lg:mt-5">
+        <h1 className="text-3xl md:text-4xl lg:text-6xl leading-tight font-montserrat font-extrabold text-white text-center mt-24 md:mt-32 lg:mt-5">
           <span className="block">Hey There,</span>
           <span className="block">
-            I'm{" "}
+            I&apos;m{" "}
             <motion.span
               key={index}
               initial={{ opacity: 0, y: 20 }}

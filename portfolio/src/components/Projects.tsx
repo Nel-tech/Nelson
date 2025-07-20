@@ -23,6 +23,7 @@ const techIcons = {
 
 const projects = [
     {
+        id:1,
         title: "PhotoSnap",
         description: "A storytelling platform where photographers share visual experiences...",
         image: "/images/Photosnap.png",
@@ -30,20 +31,24 @@ const projects = [
         link: "https://photo-snap-gallery.vercel.app/",
         code:"https://github.com/Nel-tech/PhotoSnap"
     },
+    
     {
-        title: "KavodFin-Forex Signal Sales Funnel",
-        description: "A results-driven landing experience crafted to scale a global Forex signals platform...",
-        image: "/images/Kavodfin.png",
-        tech: [techIcons.next, techIcons.framer, techIcons.tailwind, techIcons.ts, techIcons.framer],
-        link: "https://www.kavodfin.com.ng/",
-    },
-    {
+        id: 2,
         title: "PeekPolicy",
         description: "Browser extension that summarizes Terms & Conditions and flags risky clauses...",
         image: "/images/PolicyPeek.png",
         tech: [techIcons.next, techIcons.tailwind, techIcons.reactquery, techIcons.python, techIcons.fastapi, techIcons.prisma, techIcons.supabase],
         link: "https://policypeek.vercel.app/",
         code:"https://github.com/Nel-tech/PolicyPeek"
+    },
+
+    {
+        id: 3,
+        title: "KavodFin-Forex Signal Sales Funnel",
+        description: "A results-driven landing experience crafted to scale a global Forex signals platform...",
+        image: "/images/Kavodfin.png",
+        tech: [techIcons.next, techIcons.framer, techIcons.tailwind, techIcons.ts, techIcons.framer],
+        link: "https://www.kavodfin.com.ng/",
     },
 ];
 
@@ -114,29 +119,34 @@ export default function Projects() {
                                 ))}
                             </div>
 
-                            {/* CTA */}
                             <div className="flex justify-between items-center">
-
-                            <motion.a
-                                href={project.link}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                whileHover={{ x: 4 }}
-                                className="inline-flex font-roboto items-center text-emerald-400 font-medium"
-                            >
-                                View Project <ArrowUpRight className="ml-2 w-4 h-4" />
-                            </motion.a>
-
                                 <motion.a
-                                    href={project.code}
+                                    href={project.link}
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     whileHover={{ x: 4 }}
                                     className="inline-flex font-roboto items-center text-emerald-400 font-medium"
                                 >
-                                    View Code <ArrowUpRight className="ml-2 w-4 h-4" />
+                                    View Project <ArrowUpRight className="ml-2 w-4 h-4" />
                                 </motion.a>
+
+                                {project.code && (
+                                    <motion.a
+                                        href={project.code}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        whileHover={{ x: 4 }}
+                                        className="inline-flex font-roboto items-center text-emerald-400 font-medium"
+                                    >
+                                        View Code <ArrowUpRight className="ml-2 w-4 h-4" />
+                                    </motion.a>
+                                )}
                             </div>
+
+
+
+                     
+
 
                         </motion.div>
                     ))}

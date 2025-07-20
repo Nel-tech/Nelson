@@ -56,7 +56,7 @@ export default function Footer() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.2, duration: 0.6 }}
                 >
-                    Let's bring it to life — I'm just an email away.
+                    Let&apos;s bring it to life — I'm just an email away.
                 </motion.p>
 
                 {/* Email */}
