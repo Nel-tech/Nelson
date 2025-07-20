@@ -39,7 +39,7 @@ export default function Footer() {
     ];
 
     return (
-        <footer className="bg-zinc-950 text-white px-6 py-20 border-t border-zinc-800">
+        <footer id="contact" className="bg-zinc-950 text-white px-6 py-20 border-t border-zinc-800">
             <div className="max-w-5xl mx-auto flex flex-col items-center text-center space-y-8">
                 {/* Title */}
                 <motion.h3

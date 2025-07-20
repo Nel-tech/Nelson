@@ -2,6 +2,7 @@
 import { motion } from "framer-motion";
 import { SiNextdotjs, SiTailwindcss, SiPython, SiFramer, SiPostgresql, SiFastapi, SiReactquery, SiCloudinary, SiTypescript, SiExpress, SiMongodb, SiPrisma, SiSupabase} from "react-icons/si";
 import { ArrowUpRight } from "lucide-react";
+import Image from "next/image";
 
 const techIcons = {
     tailwind: <SiTailwindcss className="text-sky-400" />,
@@ -35,7 +36,7 @@ const projects = [
     {
         id: 2,
         title: "PeekPolicy",
-        description: "Browser extension that summarizes Terms & Conditions and flags risky clauses...",
+        description: "A web Platform that summarizes Terms & Conditions and flags risky clauses...",
         image: "/images/PolicyPeek.png",
         tech: [techIcons.next, techIcons.tailwind, techIcons.reactquery, techIcons.python, techIcons.fastapi, techIcons.prisma, techIcons.supabase],
         link: "https://policypeek.vercel.app/",
@@ -75,7 +76,7 @@ export default function Projects() {
                     initial={{ opacity: 0, y: -20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6 }}
-                    className="text-4xl  md:text-5xl font-extrabold font-montserrat mb-16"
+                    className="lg:text-4xl text-2xl  md:text-5xl font-extrabold font-montserrat mb-16"
                 >
                      Selected Project
                 </motion.h2>
@@ -92,16 +93,17 @@ export default function Projects() {
                             className="group bg-white/5 border border-white/10 p-6 rounded-2xl shadow-lg hover:shadow-emerald-500/30 transition relative overflow-hidden"
                         >
                             {/* Image */}
-                            <motion.img
+                          
+                            <Image
                                 src={project.image}
                                 alt={project.title}
-                                className="w-full h-56 object-cover rounded-xl mb-4 border border-white/10"
-                                whileHover={{ scale: 1.03 }}
-                                transition={{ duration: 0.3 }}
+                                className="w-full h-[15rem] object-cover rounded-xl mb-4 border border-white/10"
+                               width={200}
+                               height={200}
                             />
 
                             {/* Title */}
-                            <h3 className="text-2xl  font-roboto font-bold mb-2 group-hover:text-emerald-400 transition">
+                            <h3 className=" text-xl lg:text-2xl mb-4  font-roboto font-bold  group-hover:text-emerald-400 transition">
                                 {project.title}
                             </h3>
 
@@ -119,7 +121,7 @@ export default function Projects() {
                                 ))}
                             </div>
 
-                            <div className="flex justify-between items-center">
+                            <div className="flex justify-between items-center pt-6">
                                 <motion.a
                                     href={project.link}
                                     target="_blank"

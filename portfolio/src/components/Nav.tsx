@@ -10,9 +10,10 @@ import { motion, AnimatePresence } from 'framer-motion';
 // import { usePathname } from 'next/navigation';
 
 const navLinks = [
+  { label: "About", href: "#about" },
   { label: "Projects", href: "#projects" },
   { label: "Stacks", href: "#stacks" },
-  { label: "About", href: "#about" },
+  { label: "Contact", href: "#contact" },
 ];
 
 export default function Navbar() {
@@ -41,7 +42,7 @@ export default function Navbar() {
     <>
       {/* Top Navbar */}
       <header className="w-full flex justify-center  fixed top-0 z-50 mt-4">
-        <nav className="bg-zinc-900/80 backdrop-blur-md border border-white/10 text-white px-8 py-3 rounded-full shadow-lg flex items-center  space-x-8">
+        <nav className="bg-zinc-900/80 backdrop-blur-md border border-white/10 text-white px-13 py-3  rounded-full shadow-lg flex items-center  space-x-8">
           <ul className="hidden md:flex items-center gap-6 text-base tracking-wider font-medium">
             {navLinks.map((link, i) => (
               <li key={link.label} className="flex items-center">
@@ -64,7 +65,7 @@ export default function Navbar() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Button className="lg:ml-4 -ml-1 cursor-pointer font-roboto tracking-wider bg-emerald-400 hover:bg-emerald-500 transition-colors text-white text-sm px-5 py-2 rounded-full flex items-center gap-2 font-semibold shadow-md">
+            <Button className="lg:ml-4 -ml-10 cursor-pointer font-roboto tracking-wider bg-emerald-400 hover:bg-emerald-500 transition-colors text-white text-sm px-5 py-2 rounded-full flex items-center gap-2 font-semibold shadow-md">
               Work With Me <Handshake size={16} />
             </Button>
           </a>
