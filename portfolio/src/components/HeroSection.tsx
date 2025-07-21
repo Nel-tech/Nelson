@@ -45,7 +45,7 @@ export default function HeroSection() {
         transition={{ duration: 1.2 }}
         className="relative z-10 max-w-[90%] sm:max-w-3xl text-left md:text-center"
       >
-        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-relaxed font-medium font-montserrat  text-white mt-[1rem]  md:mt-32 lg:mt-5">
+        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-relaxed font-medium font-montserrat  text-white mt-6  md:mt-32 lg:mt-5">
           <motion.span
             className="block"
             animate={{ scale: [1, 1.02, 1] }}
