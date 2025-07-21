@@ -48,7 +48,7 @@ export default function Navbar() {
               <li key={link.label} className="flex items-center">
                 <a
                   href={link.href}
-                  className="hover:text-emerald-400 font-roboto transition-colors duration-200"
+                  className="hover:text-emerald-400 font-montserrat transition-colors duration-200"
                 >
                   {link.label}
                 </a>
@@ -65,7 +65,7 @@ export default function Navbar() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Button className="lg:ml-4 -ml-10 cursor-pointer font-roboto tracking-wider bg-emerald-400 hover:bg-emerald-500 transition-colors text-white text-sm px-5 py-2 rounded-full flex items-center gap-2 font-semibold shadow-md">
+            <Button className="lg:ml-4 -ml-10 cursor-pointer  font-montserrat tracking-wider bg-emerald-400 hover:bg-emerald-500 transition-colors text-white text-sm px-5 py-2 rounded-full flex items-center gap-2 font-semibold shadow-md">
               Work With Me <Handshake size={16} />
             </Button>
           </a>
@@ -114,7 +114,7 @@ export default function Navbar() {
                     <a
                       key={item.label}
                       href={item.href}
-                      className="block text-lg font-semibold transition font-roboto hover:text-emerald-400"
+                      className="block text-lg font-semibold transition font-montserrat hover:text-emerald-400"
                       onClick={() => setMobileMenuOpen(false)}
                     >
                       {item.label}

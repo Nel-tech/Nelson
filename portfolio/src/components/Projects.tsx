@@ -76,7 +76,7 @@ export default function Projects() {
                     initial={{ opacity: 0, y: -20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6 }}
-                    className="lg:text-4xl text-2xl  md:text-5xl font-extrabold font-montserrat mb-16"
+                    className="lg:text-4xl text-2xl  md:text-5xl font-medium font-montserrat mb-16"
                 >
                      Selected Project
                 </motion.h2>
@@ -103,12 +103,12 @@ export default function Projects() {
                             />
 
                             {/* Title */}
-                            <h3 className=" text-xl lg:text-2xl mb-4  font-roboto font-bold  group-hover:text-emerald-400 transition">
+                            <h3 className=" text-xl lg:text-2xl mb-4  font-montserrat font-bold  group-hover:text-emerald-400 transition">
                                 {project.title}
                             </h3>
 
                             {/* Description */}
-                            <p className="text-sm leading-relaxed tracking-wide font-roboto text-white/80 group-hover:text-white/90 mb-4">
+                            <p className="text-sm leading-relaxed tracking-wide font-montserrat text-white/80 group-hover:text-white/90 mb-4">
                                 {project.description}
                             </p>
 
@@ -127,7 +127,7 @@ export default function Projects() {
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     whileHover={{ x: 4 }}
-                                    className="inline-flex font-roboto items-center text-emerald-400 font-medium"
+                                    className="inline-flex font-montserrat items-center text-emerald-400 font-medium"
                                 >
                                     View Project <ArrowUpRight className="ml-2 w-4 h-4" />
                                 </motion.a>
@@ -138,7 +138,7 @@ export default function Projects() {
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         whileHover={{ x: 4 }}
-                                        className="inline-flex font-roboto items-center text-emerald-400 font-medium"
+                                        className="inline-flex font-montserrat items-center text-emerald-400 font-medium"
                                     >
                                         View Code <ArrowUpRight className="ml-2 w-4 h-4" />
                                     </motion.a>

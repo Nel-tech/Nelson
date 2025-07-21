@@ -45,7 +45,7 @@ export default function HeroSection() {
         transition={{ duration: 1.2 }}
         className="relative z-10 max-w-[90%] sm:max-w-3xl text-left md:text-center"
       >
-        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-relaxed font-montserrat font-extrabold text-white mt-[10rem] sm:mt-30 md:mt-32 lg:mt-5">
+        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-relaxed font-medium font-montserrat  text-white mt-[10rem] sm:mt-30 md:mt-32 lg:mt-5">
           <motion.span
             className="block"
             animate={{ scale: [1, 1.02, 1] }}
@@ -67,7 +67,7 @@ export default function HeroSection() {
           </span>
         </h1>
 
-        <p className="text-base sm:text-base md:text-lg lg:text-xl tracking-wider  font-roboto text-white/80 mt-4 max-w-[85%] sm:max-w-2xl mx-0 md:mx-auto text-left md:text-center leading-relaxed">
+        <p className="text-base sm:text-base md:text-lg lg:text-xl tracking-wider   text-white/80 mt-4 max-w-[85%] sm:max-w-2xl mx-0 md:mx-auto text-left md:text-center leading-relaxed">
           A <span className="font-semibold mr-1">Fullstack Developer</span>
           with a love for building sleek user interfaces, scalable backend systems,
           and delightful digital products.
@@ -82,7 +82,7 @@ export default function HeroSection() {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             type="button"
-            className="mt-8 inline-flex cursor-pointer items-center gap-2 px-6 py-3 bg-emerald-400 hover:bg-emerald-500 focus:ring-2 focus:ring-emerald-300 text-white rounded-full font-roboto tracking-wide font-semibold transition duration-200 shadow-lg"
+            className="mt-8 inline-flex cursor-pointer items-center gap-2 px-6 py-3 bg-emerald-400 hover:bg-emerald-500 focus:ring-2 focus:ring-emerald-300 text-white rounded-full font-montserrat tracking-wide font-semibold transition duration-200 shadow-lg"
           >
             Let&apos;s Talk
           </motion.button>

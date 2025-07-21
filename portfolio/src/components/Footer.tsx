@@ -51,7 +51,7 @@ export default function Footer() {
                     Got a ground-breaking idea?
                 </motion.h3>
                 <motion.p
-                    className="text-zinc-400 text-base font-roboto md:text-lg max-w-xl"
+                    className="text-zinc-400 text-base font-montserrat md:text-lg max-w-xl"
                     initial={{ opacity: 0, y: -10 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.2, duration: 0.6 }}

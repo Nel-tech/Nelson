@@ -1,15 +1,15 @@
 import type { Metadata } from "next";
-import { Roboto, Montserrat } from "next/font/google";
+import { Montserrat } from "next/font/google";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/next";
-import Head from "next/head"; // ← import this
+import Head from "next/head"; 
 
-const roboto = Roboto({
-  variable: "--font-roboto",
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "700"],
-  display: "swap",
-});
+// const roboto = Roboto({
+//   variable: "--font-roboto",
+//   subsets: ["latin"],
+//   weight: ["300", "400", "500", "700"],
+//   display: "swap",
+// });
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -54,7 +54,7 @@ export default function RootLayout({
           content="mr6DpKGyOAKnB0eQH0DQByStxObAfiiRoG9BWEtTkAs"
         />
       </Head>
-      <body className={`${roboto.variable} ${montserrat.variable} font-montserrat antialiased`}>
+      <body className={` ${montserrat.variable} font-montserrat antialiased`}>
 
         <Analytics />
         {children}
