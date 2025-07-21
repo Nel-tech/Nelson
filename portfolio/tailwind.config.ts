@@ -19,9 +19,9 @@ export default {
 		},
 		extend: {
 			fontFamily: {
-                roboto:['var(--font-roboto)', 'sans-serif'],
-                montserrat: ['var(--font-montserrat)', 'serif'],
-            },
+  roboto: ['var(--font-roboto)', 'sans-serif'],
+  montserrat: ['var(--font-montserrat)', 'sans-serif'], 
+},
 			
 			
 		
