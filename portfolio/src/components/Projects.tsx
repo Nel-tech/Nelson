@@ -89,25 +89,22 @@ export default function Projects() {
                             custom={i}
                             className="group bg-white/5 border border-white/10 p-6 rounded-2xl shadow-lg hover:shadow-emerald-500/30 transition relative overflow-hidden"
                         >
-                            {/* Image - Alternative with regular img */}
-                            <motion.img
+                         
+                            <Image
                                 src={project.image}
                                 alt={project.title}
-                                className="w-full h-56 object-cover rounded-xl mb-4 border border-white/10"
-                                whileHover={{ scale: 1.03 }}
-                                transition={{ duration: 0.3 }}
-                                onError={(e) => {
-                                    console.log(`Failed to load image: ${project.image}`);
-                                    e.currentTarget.style.display = 'none';
-                                }}
+                                fill
+                                className="object-cover rounded-xl border border-white/10"
+                                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                                priority={i < 2}
                             />
 
-                            {/* Title */}
+                       
                             <h3 className=" text-xl lg:text-2xl mb-4  font-montserrat font-bold  group-hover:text-emerald-400 transition">
                                 {project.title}
                             </h3>
 
-                            {/* Description */}
+                          
                             <p className="text-sm leading-relaxed tracking-wide font-montserrat text-white/80 group-hover:text-white/90 mb-4">
                                 {project.description}
                             </p>
