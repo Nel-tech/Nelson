@@ -1,13 +1,13 @@
 "use client";
 import { motion } from "framer-motion";
-import { SiNextdotjs, SiTailwindcss, SiPython, SiFramer, SiPostgresql, SiFastapi, SiReactquery, SiCloudinary, SiTypescript, SiExpress, SiMongodb, SiPrisma, SiSupabase} from "react-icons/si";
+import { SiNextdotjs, SiTailwindcss, SiPython, SiFramer, SiPostgresql, SiFastapi, SiReactquery, SiCloudinary, SiTypescript, SiExpress, SiMongodb, SiPrisma, SiSupabase } from "react-icons/si";
 import { ArrowUpRight } from "lucide-react";
 import Image from "next/image";
 
 const techIcons = {
     tailwind: <SiTailwindcss className="text-sky-400" />,
     ts: <SiTypescript className="text-blue-400" />,
-    
+
     reactquery: <SiReactquery className="text-red-400" />,
     next: <SiNextdotjs className="text-white" />,
     express: <SiExpress className="text-gray-300" />,
@@ -18,21 +18,20 @@ const techIcons = {
     framer: <SiFramer className="text-pink-400" />,
     fastapi: <SiFastapi className="text-white" />,
     python: <SiPython className="text-yellow-200" />,
-    cloudinary: <SiCloudinary className="text-blue-400" />, 
+    cloudinary: <SiCloudinary className="text-blue-400" />,
 };
-
 
 const projects = [
     {
-        id:1,
+        id: 1,
         title: "PhotoSnap",
         description: "A storytelling platform where photographers share visual experiences...",
         image: "/images/photosnap.png",
         tech: [techIcons.next, techIcons.tailwind, techIcons.reactquery, techIcons.ts, techIcons.express, techIcons.mongodb, techIcons.cloudinary],
         link: "https://photo-snap-gallery.vercel.app/",
-        code:"https://github.com/Nel-tech/PhotoSnap"
+        code: "https://github.com/Nel-tech/PhotoSnap"
     },
-    
+
     {
         id: 2,
         title: "PeekPolicy",
@@ -40,7 +39,7 @@ const projects = [
         image: "/images/policypeek.png",
         tech: [techIcons.next, techIcons.tailwind, techIcons.reactquery, techIcons.python, techIcons.fastapi, techIcons.prisma, techIcons.supabase],
         link: "https://policypeek.vercel.app/",
-        code:"https://github.com/Nel-tech/PolicyPeek"
+        code: "https://github.com/Nel-tech/PolicyPeek"
     },
 
     {
@@ -53,7 +52,6 @@ const projects = [
     },
 ];
 
-
 const cardVariants = {
     hidden: { opacity: 0, y: 50 },
     visible: (i: number) => ({
@@ -62,11 +60,10 @@ const cardVariants = {
         transition: {
             delay: i * 0.2,
             duration: 0.6,
-            ease: [0.25, 0.1, 0.25, 1] as [number, number, number, number], 
+            ease: [0.25, 0.1, 0.25, 1] as [number, number, number, number],
         },
     }),
 };
-
 
 export default function Projects() {
     return (
@@ -78,7 +75,7 @@ export default function Projects() {
                     transition={{ duration: 0.6 }}
                     className="lg:text-4xl text-2xl  md:text-5xl  font-montserrat mb-16"
                 >
-                     Selected Project
+                    Selected Project
                 </motion.h2>
 
                 <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-12">
@@ -92,15 +89,19 @@ export default function Projects() {
                             custom={i}
                             className="group bg-white/5 border border-white/10 p-6 rounded-2xl shadow-lg hover:shadow-emerald-500/30 transition relative overflow-hidden"
                         >
-                            {/* Image */}
-                          
+                            {/* Image - Alternative with regular img */}
                             <motion.img
                                 src={project.image}
                                 alt={project.title}
                                 className="w-full h-56 object-cover rounded-xl mb-4 border border-white/10"
                                 whileHover={{ scale: 1.03 }}
                                 transition={{ duration: 0.3 }}
+                                onError={(e) => {
+                                    console.log(`Failed to load image: ${project.image}`);
+                                    e.currentTarget.style.display = 'none';
+                                }}
                             />
+
                             {/* Title */}
                             <h3 className=" text-xl lg:text-2xl mb-4  font-montserrat font-bold  group-hover:text-emerald-400 transition">
                                 {project.title}
@@ -143,12 +144,6 @@ export default function Projects() {
                                     </motion.a>
                                 )}
                             </div>
-
-
-
-                     
-
-
                         </motion.div>
                     ))}
                 </div>
