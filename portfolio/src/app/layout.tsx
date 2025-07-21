@@ -54,9 +54,8 @@ export default function RootLayout({
           content="mr6DpKGyOAKnB0eQH0DQByStxObAfiiRoG9BWEtTkAs"
         />
       </Head>
-      <body
-        className={`${roboto.variable} ${montserrat.variable} antialiased`}
-      >
+      <body className={`${roboto.variable} ${montserrat.variable} font-montserrat antialiased`}>
+
         <Analytics />
         {children}
       </body>

@@ -27,7 +27,7 @@ const projects = [
         id:1,
         title: "PhotoSnap",
         description: "A storytelling platform where photographers share visual experiences...",
-        image: "/images/Photosnap.png",
+        image: "/images/photosnap.png",
         tech: [techIcons.next, techIcons.tailwind, techIcons.reactquery, techIcons.ts, techIcons.express, techIcons.mongodb, techIcons.cloudinary],
         link: "https://photo-snap-gallery.vercel.app/",
         code:"https://github.com/Nel-tech/PhotoSnap"
@@ -37,7 +37,7 @@ const projects = [
         id: 2,
         title: "PeekPolicy",
         description: "A web Platform that summarizes Terms & Conditions and flags risky clauses...",
-        image: "/images/PolicyPeek.png",
+        image: "/images/policypeek.png",
         tech: [techIcons.next, techIcons.tailwind, techIcons.reactquery, techIcons.python, techIcons.fastapi, techIcons.prisma, techIcons.supabase],
         link: "https://policypeek.vercel.app/",
         code:"https://github.com/Nel-tech/PolicyPeek"
@@ -47,7 +47,7 @@ const projects = [
         id: 3,
         title: "KavodFin-Forex Signal Sales Funnel",
         description: "A results-driven landing experience crafted to scale a global Forex signals platform...",
-        image: "/images/Kavodfin.png",
+        image: "/images/kavodfin.png",
         tech: [techIcons.next, techIcons.framer, techIcons.tailwind, techIcons.ts, techIcons.framer],
         link: "https://www.kavodfin.com.ng/",
     },
