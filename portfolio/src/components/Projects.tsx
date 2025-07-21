@@ -94,13 +94,12 @@ export default function Projects() {
                         >
                             {/* Image */}
                           
-                            <Image
+                            <motion.img
                                 src={project.image}
                                 alt={project.title}
-                                className="w-full h-[15rem] object-cover rounded-xl mb-4 border border-white/10"
-                                width={200}
-                                height={200}
-                                onError={() => console.log(`Failed to load image: ${project.image}`)}
+                                className="w-full h-56 object-cover rounded-xl mb-4 border border-white/10"
+                                whileHover={{ scale: 1.03 }}
+                                transition={{ duration: 0.3 }}
                             />
                             {/* Title */}
                             <h3 className=" text-xl lg:text-2xl mb-4  font-montserrat font-bold  group-hover:text-emerald-400 transition">

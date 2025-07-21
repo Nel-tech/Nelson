@@ -46,7 +46,7 @@ export default function Footer() {
                     initial={{ opacity: 0, y: -20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6 }}
-                    className="text-2xl md:text-3xl font-bold font-montserrat text-white"
+                    className="text-2xl md:text-3xl font-medium font-montserrat text-white"
                 >
                     Got a ground-breaking idea?
                 </motion.h3>
@@ -64,7 +64,7 @@ export default function Footer() {
                     initial={{ opacity: 0, scale: 0.9 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ delay: 0.3, duration: 0.6 }}
-                    className="text-xl lg:text-3xl md:text-3xl font-semibold text-emerald-400 font-montserrat"
+                    className="text-xl lg:text-3xl md:text-3xl font-medium text-emerald-400 font-montserrat"
                 >
                     favournelson82@gmail.com
                 </motion.p>
