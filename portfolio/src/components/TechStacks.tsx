@@ -17,6 +17,7 @@ import {
     SiFirebase,
     SiTypescript,
     SiFramer,
+    SiPython
 } from "react-icons/si";
 
 const FastApiIcon = () => (
@@ -55,6 +56,7 @@ const techStacks = [
     { icon: <SiFirebase className="text-orange-400" />, name: "Firebase" },
     { icon: <SiFramer className="text-pink-400" />, name: "Framer Motion" },
     { icon: <FastApiIcon />, name: "FastAPI" }, 
+    { icon: <SiPython />, name: "Python" }, 
 ];
 
 export default function TechStacks() {
