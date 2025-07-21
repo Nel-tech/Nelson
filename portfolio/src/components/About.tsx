@@ -11,7 +11,7 @@ export default function About() {
                 transition={{ duration: 0.8 }}
                 className="max-w-3xl text-center space-y-6"
             >
-                <h2 className="text-4xl md:text-5xl  font-medium font-montserrat">
+                <h2 className="text-4xl md:text-5xl font-montserrat">
                     About Me
                 </h2>
                 <p className="text-zinc-300 text-lg leading-relaxed font-montserrat ">
@@ -21,7 +21,7 @@ export default function About() {
                     Whether it&apos;s building <span className="text-white font-semibold">PolicyPeek</span>, an AI-powered tool that simplifies complex Terms & Conditions, or crafting <span className="text-white font-semibold">Photo Snap</span>, a sleek photo-sharing platform built for speed and experience — I focus on clean architecture, seamless UX, and long-term scalability.
                 </p>
                 <p className="text-zinc-400 text-base leading-relaxed font-montserrat">
-                    For me, every project is a chance to blend design, logic, and constant learning — shipping code that not only solves real problems but elevates the entire user journey. <span className="text-white font-medium">Always evolving. Always building.</span>
+                    For me, every project is a chance to blend design, logic, and constant learning — shipping code that not only solves real problems but elevates the entire user journey. <span className="text-white ">Always evolving. Always building.</span>
                 </p>
                 <div className="text-zinc-500 italic text-sm">
                     <p className="text-zinc-500 italic text-sm">

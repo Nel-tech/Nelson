@@ -67,7 +67,7 @@ export default function HeroSection() {
           </span>
         </h1>
 
-        <p className="text-base sm:text-base md:text-lg lg:text-xl tracking-wider   text-white/80 mt-4 max-w-[85%] sm:max-w-2xl mx-0 md:mx-auto text-left md:text-center leading-relaxed">
+        <p className="font-montserrat text-base sm:text-base md:text-lg lg:text-xl tracking-wider   text-white/80 mt-4 max-w-[85%] sm:max-w-2xl mx-0 md:mx-auto text-left md:text-center leading-relaxed">
           A <span className="font-semibold mr-1">Fullstack Developer</span>
           with a love for building sleek user interfaces, scalable backend systems,
           and delightful digital products.
@@ -82,7 +82,7 @@ export default function HeroSection() {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             type="button"
-            className="mt-8 inline-flex cursor-pointer items-center gap-2 px-6 py-3 bg-emerald-400 hover:bg-emerald-500 focus:ring-2 focus:ring-emerald-300 text-white rounded-full font-montserrat tracking-wide font-semibold transition duration-200 shadow-lg"
+            className="mt-8 inline-flex  cursor-pointer items-center gap-2 px-6 py-3 bg-emerald-400 hover:bg-emerald-500 focus:ring-2 focus:ring-emerald-300 text-white rounded-full font-montserrat tracking-wide font-semibold transition duration-200 shadow-lg"
           >
             Let&apos;s Talk
           </motion.button>
