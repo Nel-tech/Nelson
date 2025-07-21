@@ -56,7 +56,7 @@ const techStacks = [
     { icon: <SiFirebase className="text-orange-400" />, name: "Firebase" },
     { icon: <SiFramer className="text-pink-400" />, name: "Framer Motion" },
     { icon: <FastApiIcon />, name: "FastAPI" }, 
-    { icon: <SiPython />, name: "Python" }, 
+    { icon: <SiPython  className="text-yellow-200" />, name: "Python" }, 
 ];
 
 export default function TechStacks() {
