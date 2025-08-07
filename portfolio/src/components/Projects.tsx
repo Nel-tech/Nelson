@@ -42,14 +42,14 @@ const projects = [
         code: "https://github.com/Nel-tech/PolicyPeek"
     },
 
-    {
-        id: 3,
-        title: "KavodFin-Forex Signal Sales Funnel",
-        description: "A results-driven landing experience crafted to scale a global Forex signals platform...",
-        image: "/images/kavodfin.png",
-        tech: [techIcons.next, techIcons.framer, techIcons.tailwind, techIcons.ts, techIcons.framer],
-        link: "https://www.kavodfin.com.ng/",
-    },
+    // {
+    //     id: 3,
+    //     title: "KavodFin-Forex Signal Sales Funnel",
+    //     description: "A results-driven landing experience crafted to scale a global Forex signals platform...",
+    //     image: "/images/kavodfin.png",
+    //     tech: [techIcons.next, techIcons.framer, techIcons.tailwind, techIcons.ts, techIcons.framer],
+    //     link: "https://www.kavodfin.com.ng/",
+    // },
 ];
 
 const cardVariants = {
