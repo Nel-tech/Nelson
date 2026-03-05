@@ -55,7 +55,7 @@ const projects = [
     id: 4,
     title: "Ftntn",
     description: "Ftntn helps you find the best talent and build high-performing teams. Finding the right people can be hard, and most companies aren't tapping into the abundance of global talent. We're about to change that.",
-    image: "/images/ftntn.jpg",
+    image: "/images/Ftntn.jpg",
     tech: [techIcons.next, techIcons.tailwind, techIcons.mongodb, techIcons.express],
     link: "https://ftntn1.vercel.app/",
 }
