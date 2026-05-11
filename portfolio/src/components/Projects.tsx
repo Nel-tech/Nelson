@@ -63,7 +63,7 @@ const projects = [
   id: 5,
   title: "Captain Jhay Travels — Flight Booking Platform",
   description: "A full-stack travel booking platform for a Nigerian travel agency. Features a flight booking form, instant WhatsApp notifications to the agent on new bookings, and a clean responsive UI. Built with React, TypeScript, Express, and integrated with the Duffel flight API.",
-  image: "/images/jhay.jpg",
+  image: "/images/jhay.png",
   tech: [techIcons.next, techIcons.ts, techIcons.express, techIcons.tailwind],
   link: "https://captain-jhay.vercel.app/",
 }
