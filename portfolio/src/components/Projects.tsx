@@ -25,7 +25,7 @@ const projects = [
     {
         id: 1,
         title: "Ftntn",
-        description: "A full-stack talent marketplace connecting companies with global freelance talent, built to surface skilled candidates that traditional hiring pipelines overlook. Includes auth, profile/search flows, and a MongoDB + Express backend — my largest project to date at 130+ commits.",
+        description: "A full-stack talent marketplace connecting companies with global freelance talent, built to surface skilled candidates that traditional hiring pipelines overlook. Includes auth, profile/search flows, and a MongoDB + Express backend",
         image: "/images/Ftntn.jpg",
         tech: [techIcons.next, techIcons.tailwind, techIcons.mongodb, techIcons.express],
         link: "https://ftntn1.vercel.app/",
