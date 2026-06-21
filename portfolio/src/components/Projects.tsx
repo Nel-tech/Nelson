@@ -24,49 +24,46 @@ const techIcons = {
 const projects = [
     {
         id: 1,
-        title: "PhotoSnap",
-        description: "A storytelling platform where photographers share visual experiences...",
-        image: "/images/photosnap.png",
-        tech: [techIcons.next, techIcons.tailwind, techIcons.reactquery, techIcons.ts, techIcons.express, techIcons.mongodb, techIcons.cloudinary],
-        link: "https://photo-snap-gallery.vercel.app/",
-        code: "https://github.com/Nel-tech/PhotoSnap"
+        title: "Ftntn",
+        description: "A full-stack talent marketplace connecting companies with global freelance talent, built to surface skilled candidates that traditional hiring pipelines overlook. Includes auth, profile/search flows, and a MongoDB + Express backend — my largest project to date at 130+ commits.",
+        image: "/images/Ftntn.jpg",
+        tech: [techIcons.next, techIcons.tailwind, techIcons.mongodb, techIcons.express],
+        link: "https://ftntn1.vercel.app/",
     },
-
     {
         id: 2,
+        title: "Captain Jhay Travels — Flight Booking Platform",
+        description: "A full-stack flight booking platform for a Nigerian travel agency, integrating the Duffel flight API for live search and Twilio/Resend for instant WhatsApp and email booking notifications to the agent.",
+        image: "/images/jhay.png",
+        tech: [techIcons.next, techIcons.ts, techIcons.express, techIcons.tailwind],
+        link: "https://captain-jhay.vercel.app/",
+    },
+    {
+        id: 3,
         title: "PeekPolicy",
-        description: "A web Platform that summarizes Terms & Conditions and flags risky clauses...",
+        description: "An AI-powered tool that scans Terms & Conditions documents and flags risky clauses in plain English, so users don't agree to things they haven't actually read. Built with a Python/FastAPI backend handling the NLP pipeline and a Next.js frontend for instant summaries.",
         image: "/images/policypeek.png",
         tech: [techIcons.next, techIcons.tailwind, techIcons.reactquery, techIcons.python, techIcons.fastapi, techIcons.prisma, techIcons.supabase],
         link: "https://policypeek.vercel.app/",
         code: "https://github.com/Nel-tech/PolicyPeek"
     },
-
-     {
-         id: 3,
-         title: "KavodFin-Forex Signal Sales Funnel",
-         description: "A results-driven landing experience crafted to scale a global Forex signals platform...",
-         image: "/images/kavodfin.png",
-       tech: [techIcons.next, techIcons.framer, techIcons.tailwind, techIcons.ts, techIcons.framer],
-       link: "https://www.kavodfin.com.ng/",
-     },
-
-{
-    id: 4,
-    title: "Ftntn",
-    description: "Ftntn helps you find the best talent and build high-performing teams. Finding the right people can be hard, and most companies aren't tapping into the abundance of global talent. We're about to change that.",
-    image: "/images/Ftntn.jpg",
-    tech: [techIcons.next, techIcons.tailwind, techIcons.mongodb, techIcons.express],
-    link: "https://ftntn1.vercel.app/",
-},
     {
-  id: 5,
-  title: "Captain Jhay Travels — Flight Booking Platform",
-  description: "A full-stack travel booking platform for a Nigerian travel agency. Features a flight booking form, instant WhatsApp notifications to the agent on new bookings, and a clean responsive UI. Built with React, TypeScript, Express, and integrated with the Duffel flight API.",
-  image: "/images/jhay.png",
-  tech: [techIcons.next, techIcons.ts, techIcons.express, techIcons.tailwind],
-  link: "https://captain-jhay.vercel.app/",
-}
+        id: 4,
+        title: "PhotoSnap",
+        description: "A storytelling platform where photographers upload and share visual narratives, with infinite-scroll galleries, cloud-optimized image delivery via Cloudinary, and a MongoDB-backed API for likes, comments, and collections.",
+        image: "/images/photosnap.png",
+        tech: [techIcons.next, techIcons.tailwind, techIcons.reactquery, techIcons.ts, techIcons.express, techIcons.mongodb, techIcons.cloudinary],
+        link: "https://photo-snap-gallery.vercel.app/",
+        code: "https://github.com/Nel-tech/PhotoSnap"
+    },
+    {
+        id: 5,
+        title: "KavodFin-Forex Signal Sales Funnel",
+        description: "A conversion-focused landing page built to scale a global Forex signals platform, with animated UI sections, fast load times, and a layout structured around driving sign-ups rather than just looking good.",
+        image: "/images/kavodfin.png",
+        tech: [techIcons.next, techIcons.framer, techIcons.tailwind, techIcons.ts, techIcons.framer],
+        link: "https://www.kavodfin.com.ng/",
+    },
 ];
 
 const cardVariants = {
@@ -113,7 +110,7 @@ export default function Projects() {
                                 className="w-full h-56 object-cover rounded-xl mb-4 border border-white/10"
                                 whileHover={{ scale: 1.03 }}
                                 transition={{ duration: 0.3 }}
-                               
+
                             />
 
                             {/* Title */}
